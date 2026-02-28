@@ -1,8 +1,8 @@
 /// Game configuration constants
 class GameConfig {
   // Screen and camera
-  static double worldWidth = 3840.0;
-  static double worldHeight = 3840.0;
+  static double worldWidth = 3840;
+  static double worldHeight = 3840;
   static const double cameraZoom = 1;
 
   // Performance

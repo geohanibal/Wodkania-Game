@@ -1,17 +1,18 @@
 import 'dart:io';
+
+import 'package:flame/game.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:vodkania_game/game/input/keyboard_controls.dart';
 import 'package:vodkania_game/game/input/mouse_controls.dart';
-import 'package:vodkania_game/game/vodkania_game.dart';
+import 'package:vodkania_game/game/ui/game_over_overlay.dart';
 import 'package:vodkania_game/game/ui/hud_overlay.dart';
 import 'package:vodkania_game/game/ui/pause_overlay.dart';
-import 'package:vodkania_game/game/ui/game_over_overlay.dart';
-import 'package:flame/game.dart';
+import 'package:vodkania_game/game/vodkania_game.dart';
 
 /// Main game app wrapper
 class GameApp extends StatelessWidget {
-  const GameApp({Key? key}) : super(key: key);
+  const GameApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +29,7 @@ class GameApp extends StatelessWidget {
 }
 
 class GameScreen extends StatefulWidget {
-  const GameScreen({Key? key}) : super(key: key);
+  const GameScreen({super.key});
 
   @override
   State<GameScreen> createState() => _GameScreenState();

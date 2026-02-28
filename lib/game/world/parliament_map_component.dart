@@ -1,8 +1,7 @@
 import 'package:flame/components.dart';
-import 'package:vodkania_game/game/config/game_config.dart';
 import 'package:flutter/material.dart';
+import 'package:vodkania_game/game/config/game_config.dart';
 import 'package:vodkania_game/game/vodkania_game.dart';
-import 'package:vodkania_game/game/entities/vehicle_sprite_loader.dart';
 
 // Asset path validation helper
 bool looksWrong(String p) =>
@@ -11,9 +10,9 @@ bool looksWrong(String p) =>
 
 /// Parliament area map with dynamic AI obstacles
 class ParliamentMapComponent extends PositionComponent {
-  VodkaniaGame? gameRef;
 
   ParliamentMapComponent({this.gameRef});
+  VodkaniaGame? gameRef;
 
   // Performance/memory reporting overlay
   @override
@@ -35,13 +34,13 @@ class ParliamentMapComponent extends PositionComponent {
     textPainter.layout();
     canvas.drawRect(
         Rect.fromLTWH(10, 10, textPainter.width + 16, textPainter.height + 16),
-        paint);
+        paint,);
     textPainter.paint(canvas, const Offset(18, 18));
   }
 
   double _memoryUsageMB() {
     // Placeholder: implement actual memory usage reporting
-    return 0.0;
+    return 0;
   }
 
   // Tile map structure for layered rendering
@@ -74,7 +73,7 @@ class ParliamentMapComponent extends PositionComponent {
     'building104',
     'building105',
     'building106',
-    'building107'
+    'building107',
   ];
   String roadSpriteKey = 'road';
   String sidewalkSpriteKey = 'sidewalk';
@@ -84,7 +83,7 @@ class ParliamentMapComponent extends PositionComponent {
     'car_blue',
     'car_green',
     'car_yellow',
-    'car_purple'
+    'car_purple',
   ];
 
   // Asset registry for swapping
@@ -119,12 +118,12 @@ class ParliamentMapComponent extends PositionComponent {
 
   // Utility: check collision with building obstacles
   bool isPlayerCollidingWithBuilding(
-      Vector2 playerPosition, double playerRadius) {
+      Vector2 playerPosition, double playerRadius,) {
     for (final obstacle in _buildingObstacles) {
       final buildingRect = obstacle.rect;
       final playerRect = Rect.fromCircle(
           center: Offset(playerPosition.x, playerPosition.y),
-          radius: playerRadius);
+          radius: playerRadius,);
       if (buildingRect.overlaps(playerRect)) {
         return true;
       }
@@ -140,7 +139,7 @@ class ParliamentMapComponent extends PositionComponent {
     try {
       final parliamentPath = assetRegistry[parliamentSpriteKey]!;
       debugPrint('LOAD: $parliamentPath');
-      assert(!looksWrong(parliamentPath), 'Asset path looks wrong: ' + parliamentPath);
+      assert(!looksWrong(parliamentPath), 'Asset path looks wrong: $parliamentPath');
       final sprite = await Sprite.load(parliamentPath);
       final parliament = SpriteComponent()
         ..sprite = sprite
@@ -153,13 +152,13 @@ class ParliamentMapComponent extends PositionComponent {
     }
 
     // Buildings: arrange in grid (5x2)
-    for (int i = 0; i < 10; i++) {
+    for (var i = 0; i < 10; i++) {
       try {
         // Use assetRegistry for first 5, then repeat
         final key = 'building${(i % 5) + 1}';
         final buildingPath = assetRegistry[key]!;
         debugPrint('LOAD: $buildingPath');
-        assert(!looksWrong(buildingPath), 'Asset path looks wrong: ' + buildingPath);
+        assert(!looksWrong(buildingPath), 'Asset path looks wrong: $buildingPath');
         final sprite = await Sprite.load(buildingPath);
         final comp = SpriteComponent()
           ..sprite = sprite
@@ -184,11 +183,11 @@ class ParliamentMapComponent extends PositionComponent {
     }
 
     // Road tiles
-    for (int i = 0; i < 5; i++) {
+    for (var i = 0; i < 5; i++) {
       try {
         final roadPath = assetRegistry[roadSpriteKey]!;
         debugPrint('LOAD: $roadPath');
-        assert(!looksWrong(roadPath), 'Asset path looks wrong: ' + roadPath);
+        assert(!looksWrong(roadPath), 'Asset path looks wrong: $roadPath');
         final sprite = await Sprite.load(roadPath);
         final comp = SpriteComponent()
           ..sprite = sprite
@@ -202,11 +201,11 @@ class ParliamentMapComponent extends PositionComponent {
     }
 
     // Sidewalk tiles
-    for (int i = 0; i < 5; i++) {
+    for (var i = 0; i < 5; i++) {
       try {
         final sidewalkPath = assetRegistry[sidewalkSpriteKey]!;
         debugPrint('LOAD: $sidewalkPath');
-        assert(!looksWrong(sidewalkPath), 'Asset path looks wrong: ' + sidewalkPath);
+        assert(!looksWrong(sidewalkPath), 'Asset path looks wrong: $sidewalkPath');
         final sprite = await Sprite.load(sidewalkPath);
         final comp = SpriteComponent()
           ..sprite = sprite
@@ -220,7 +219,7 @@ class ParliamentMapComponent extends PositionComponent {
     }
 
     // Lamp posts
-    for (int i = 0; i < 2; i++) {
+    for (var i = 0; i < 2; i++) {
       try {
         // No lamp_post asset available, skip
         continue; // No lamp_post asset available, skip
@@ -230,7 +229,7 @@ class ParliamentMapComponent extends PositionComponent {
     }
 
     // Roadblocks
-    for (int i = 0; i < 2; i++) {
+    for (var i = 0; i < 2; i++) {
       try {
         // No roadblock asset available, skip
         continue; // No roadblock asset available, skip
@@ -243,7 +242,7 @@ class ParliamentMapComponent extends PositionComponent {
     // Add a blue sedan car using an existing PNG (carBlue2_000.png)
     try {
       const carPath = 'vehicles/PNG/Civilian/Blue/Sedan 1/carBlue2_000.png';
-      assert(!looksWrong(carPath), 'Asset path looks wrong: ' + carPath);
+      assert(!looksWrong(carPath), 'Asset path looks wrong: $carPath');
       final sprite = await Sprite.load(carPath);
       final comp = SpriteComponent()
         ..sprite = sprite
@@ -261,6 +260,6 @@ class ParliamentMapComponent extends PositionComponent {
 
 // Simple obstacle class for collision
 class _Obstacle {
-  final Rect rect;
   _Obstacle(this.rect);
+  final Rect rect;
 }

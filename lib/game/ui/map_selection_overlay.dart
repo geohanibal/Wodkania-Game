@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:vodkania_game/game/vodkania_game.dart';
+import 'package:vodkania_game/game/config/game_config.dart';
 import 'package:vodkania_game/game/state/game_state.dart';
 import 'package:vodkania_game/game/state/overlays.dart';
-import 'package:vodkania_game/game/config/game_config.dart';
+import 'package:vodkania_game/game/vodkania_game.dart';
 
 class MapSelectionOverlay extends StatelessWidget {
-  final VodkaniaGame game;
 
-  const MapSelectionOverlay({super.key, required this.game});
+  const MapSelectionOverlay({required this.game, super.key});
+  final VodkaniaGame game;
 
   @override
   Widget build(BuildContext context) {

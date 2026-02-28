@@ -1,6 +1,6 @@
+import 'package:flame/collisions.dart';
 import 'package:flame/components.dart';
 import 'package:flame_tiled/flame_tiled.dart';
-import 'package:flame/collisions.dart';
 
 class TiledWall extends PositionComponent {
   TiledWall({required Vector2 position, required Vector2 size}) 
@@ -8,11 +8,11 @@ class TiledWall extends PositionComponent {
 }
 
 class VodkaniaMap extends PositionComponent with HasGameReference {
+
+  VodkaniaMap({required this.mapPath});
   static const double tileSize = 64;
   late TiledComponent map;
   final String mapPath;
-
-  VodkaniaMap({required this.mapPath});
 
   @override
   Future<void> onLoad() async {

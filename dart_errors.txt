@@ -1,357 +1,84 @@
 Analyzing Wodkania-Game...
 
-warning - lib\game\entities\player\player_component.dart:160:11 - The value of the local variable 'pantsPaint' isn't used. Try removing the variable or using it. - unused_local_variable
+  error - lib\game\entities\npc\npc_component.dart:105:49 - A value of type 'double' can't be assigned to a variable of type 'int'. Try changing the type of the variable, or casting the right-hand type to 'int'. - invalid_assignment
+  error - lib\game\entities\npc\npc_component.dart:106:54 - A value of type 'double' can't be assigned to a variable of type 'int'. Try changing the type of the variable, or casting the right-hand type to 'int'. - invalid_assignment
+  error - lib\game\entities\npc\npc_component.dart:108:92 - The argument type 'int' can't be assigned to the parameter type 'double'.  - argument_type_not_assignable
+  error - lib\game\entities\player\player_component.dart:230:13 - Members can't be declared to be both 'final' and 'var'. Try removing the keyword 'var'. - final_and_var
+  error - lib\game\entities\player\player_component.dart:240:11 - Members can't be declared to be both 'final' and 'var'. Try removing the keyword 'var'. - final_and_var
+  error - lib\game\entities\player\player_component.dart:255:13 - Members can't be declared to be both 'final' and 'var'. Try removing the keyword 'var'. - final_and_var
+  error - lib\game\entities\player\player_component.dart:260:23 - A value of type 'double' can't be assigned to a variable of type 'int'. Try changing the type of the variable, or casting the right-hand type to 'int'. - invalid_assignment
+  error - lib\game\entities\player\player_component.dart:261:24 - A value of type 'double' can't be assigned to a variable of type 'int'. Try changing the type of the variable, or casting the right-hand type to 'int'. - invalid_assignment
+  error - lib\main.dart:42:43 - The method 'restartGame' isn't defined for the type 'Object'. Try correcting the name to the name of an existing method, or defining a method named 'restartGame'. - undefined_method
+warning - lib\game\entities\player\player_component.dart:243:11 - The value of the local variable 'pantsPaint' isn't used. Try removing the variable or using it. - unused_local_variable
 warning - lib\game\ui\game_over_overlay.dart:15:11 - The value of the local variable 'runState' isn't used. Try removing the variable or using it. - unused_local_variable
-warning - lib\game\ui\hud_overlay.dart:1:8 - Unused import: 'dart:math'. Try removing the import directive. - unused_import
-warning - lib\game\world\parliament_map_component.dart:5:8 - Unused import: 'package:vodkania_game/game/entities/vehicle_sprite_loader.dart'. Try removing the import directive. - unused_import
-warning - lib\game\world\world_builder.dart:4:8 - Unused import: 'package:vodkania_game/game/world/parliament_map_component.dart'. Try removing the import directive. - unused_import
-   info - assets\tiles\generate_map.dart:5:9 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - assets\tiles\generate_map.dart:6:9 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - assets\tiles\generate_map.dart:7:3 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - assets\tiles\generate_map.dart:7:3 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - assets\tiles\generate_map.dart:8:3 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - assets\tiles\generate_map.dart:8:3 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - assets\tiles\generate_map.dart:15:8 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - assets\tiles\generate_map.dart:16:10 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - assets\tiles\generate_map.dart:17:7 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - assets\tiles\generate_map.dart:17:7 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - assets\tiles\generate_map.dart:17:21 - Unnecessary use of parentheses. Try removing the parentheses. - unnecessary_parenthesis
-   info - assets\tiles\generate_map.dart:22:3 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - assets\tiles\generate_map.dart:25:3 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - assets\tiles\generate_map.dart:25:3 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - assets\tiles\generate_map.dart:26:3 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - assets\tiles\generate_map.dart:26:3 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - assets\tiles\generate_map.dart:27:3 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - assets\tiles\generate_map.dart:27:3 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - assets\tiles\generate_map.dart:31:3 - Missing a required trailing comma. Try adding a trailing comma. - require_trailing_commas
-   info - assets\tiles\generate_map.dart:34:8 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - assets\tiles\generate_map.dart:35:10 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - assets\tiles\generate_map.dart:41:12 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - assets\tiles\generate_map.dart:42:14 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - assets\tiles\generate_map.dart:45:13 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - assets\tiles\generate_map.dart:45:13 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - assets\tiles\generate_map.dart:46:13 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - assets\tiles\generate_map.dart:46:13 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - assets\tiles\generate_map.dart:47:13 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - assets\tiles\generate_map.dart:47:13 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - assets\tiles\generate_map.dart:51:13 - Missing a required trailing comma. Try adding a trailing comma. - require_trailing_commas
    info - assets\tiles\generate_map.dart:59:22 - Missing a newline at the beginning of a multiline string. Try adding a newline at the beginning of the string. - leading_newlines_in_multiline_strings
    info - assets\tiles\generate_map.dart:75:3 - Don't invoke 'print' in production code. Try using a logging framework. - avoid_print
-   info - assets\tiles\generate_map.dart:79:3 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - assets\tiles\generate_map.dart:79:3 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - assets\tiles\generate_map.dart:80:8 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
    info - assets\tiles\generate_tiles.dart:15:3 - Don't invoke 'print' in production code. Try using a logging framework. - avoid_print
-   info - build\flutter_assets\assets\tiles\generate_map.dart:5:9 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - build\flutter_assets\assets\tiles\generate_map.dart:6:9 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - build\flutter_assets\assets\tiles\generate_map.dart:7:3 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - build\flutter_assets\assets\tiles\generate_map.dart:7:3 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - build\flutter_assets\assets\tiles\generate_map.dart:8:3 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - build\flutter_assets\assets\tiles\generate_map.dart:8:3 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - build\flutter_assets\assets\tiles\generate_map.dart:15:8 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - build\flutter_assets\assets\tiles\generate_map.dart:16:10 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - build\flutter_assets\assets\tiles\generate_map.dart:17:7 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - build\flutter_assets\assets\tiles\generate_map.dart:17:7 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - build\flutter_assets\assets\tiles\generate_map.dart:17:21 - Unnecessary use of parentheses. Try removing the parentheses. - unnecessary_parenthesis
-   info - build\flutter_assets\assets\tiles\generate_map.dart:22:3 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - build\flutter_assets\assets\tiles\generate_map.dart:25:3 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - build\flutter_assets\assets\tiles\generate_map.dart:25:3 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - build\flutter_assets\assets\tiles\generate_map.dart:26:3 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - build\flutter_assets\assets\tiles\generate_map.dart:26:3 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - build\flutter_assets\assets\tiles\generate_map.dart:27:3 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - build\flutter_assets\assets\tiles\generate_map.dart:27:3 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - build\flutter_assets\assets\tiles\generate_map.dart:31:3 - Missing a required trailing comma. Try adding a trailing comma. - require_trailing_commas
-   info - build\flutter_assets\assets\tiles\generate_map.dart:34:8 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - build\flutter_assets\assets\tiles\generate_map.dart:35:10 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - build\flutter_assets\assets\tiles\generate_map.dart:41:12 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - build\flutter_assets\assets\tiles\generate_map.dart:42:14 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - build\flutter_assets\assets\tiles\generate_map.dart:45:13 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - build\flutter_assets\assets\tiles\generate_map.dart:45:13 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - build\flutter_assets\assets\tiles\generate_map.dart:46:13 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - build\flutter_assets\assets\tiles\generate_map.dart:46:13 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - build\flutter_assets\assets\tiles\generate_map.dart:47:13 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - build\flutter_assets\assets\tiles\generate_map.dart:47:13 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - build\flutter_assets\assets\tiles\generate_map.dart:51:13 - Missing a required trailing comma. Try adding a trailing comma. - require_trailing_commas
    info - build\flutter_assets\assets\tiles\generate_map.dart:59:22 - Missing a newline at the beginning of a multiline string. Try adding a newline at the beginning of the string. - leading_newlines_in_multiline_strings
    info - build\flutter_assets\assets\tiles\generate_map.dart:75:3 - Don't invoke 'print' in production code. Try using a logging framework. - avoid_print
-   info - build\flutter_assets\assets\tiles\generate_map.dart:79:3 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - build\flutter_assets\assets\tiles\generate_map.dart:79:3 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - build\flutter_assets\assets\tiles\generate_map.dart:80:8 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
    info - build\flutter_assets\assets\tiles\generate_tiles.dart:15:3 - Don't invoke 'print' in production code. Try using a logging framework. - avoid_print
-   info - build\windows\x64\runner\Debug\data\flutter_assets\assets\tiles\generate_map.dart:5:9 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - build\windows\x64\runner\Debug\data\flutter_assets\assets\tiles\generate_map.dart:6:9 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - build\windows\x64\runner\Debug\data\flutter_assets\assets\tiles\generate_map.dart:7:3 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - build\windows\x64\runner\Debug\data\flutter_assets\assets\tiles\generate_map.dart:7:3 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - build\windows\x64\runner\Debug\data\flutter_assets\assets\tiles\generate_map.dart:8:3 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - build\windows\x64\runner\Debug\data\flutter_assets\assets\tiles\generate_map.dart:8:3 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - build\windows\x64\runner\Debug\data\flutter_assets\assets\tiles\generate_map.dart:15:8 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - build\windows\x64\runner\Debug\data\flutter_assets\assets\tiles\generate_map.dart:16:10 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - build\windows\x64\runner\Debug\data\flutter_assets\assets\tiles\generate_map.dart:17:7 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - build\windows\x64\runner\Debug\data\flutter_assets\assets\tiles\generate_map.dart:17:7 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - build\windows\x64\runner\Debug\data\flutter_assets\assets\tiles\generate_map.dart:17:21 - Unnecessary use of parentheses. Try removing the parentheses. - unnecessary_parenthesis
-   info - build\windows\x64\runner\Debug\data\flutter_assets\assets\tiles\generate_map.dart:22:3 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - build\windows\x64\runner\Debug\data\flutter_assets\assets\tiles\generate_map.dart:25:3 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - build\windows\x64\runner\Debug\data\flutter_assets\assets\tiles\generate_map.dart:25:3 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - build\windows\x64\runner\Debug\data\flutter_assets\assets\tiles\generate_map.dart:26:3 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - build\windows\x64\runner\Debug\data\flutter_assets\assets\tiles\generate_map.dart:26:3 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - build\windows\x64\runner\Debug\data\flutter_assets\assets\tiles\generate_map.dart:27:3 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - build\windows\x64\runner\Debug\data\flutter_assets\assets\tiles\generate_map.dart:27:3 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - build\windows\x64\runner\Debug\data\flutter_assets\assets\tiles\generate_map.dart:31:3 - Missing a required trailing comma. Try adding a trailing comma. - require_trailing_commas
-   info - build\windows\x64\runner\Debug\data\flutter_assets\assets\tiles\generate_map.dart:34:8 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - build\windows\x64\runner\Debug\data\flutter_assets\assets\tiles\generate_map.dart:35:10 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - build\windows\x64\runner\Debug\data\flutter_assets\assets\tiles\generate_map.dart:41:12 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - build\windows\x64\runner\Debug\data\flutter_assets\assets\tiles\generate_map.dart:42:14 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - build\windows\x64\runner\Debug\data\flutter_assets\assets\tiles\generate_map.dart:45:13 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - build\windows\x64\runner\Debug\data\flutter_assets\assets\tiles\generate_map.dart:45:13 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - build\windows\x64\runner\Debug\data\flutter_assets\assets\tiles\generate_map.dart:46:13 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - build\windows\x64\runner\Debug\data\flutter_assets\assets\tiles\generate_map.dart:46:13 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - build\windows\x64\runner\Debug\data\flutter_assets\assets\tiles\generate_map.dart:47:13 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - build\windows\x64\runner\Debug\data\flutter_assets\assets\tiles\generate_map.dart:47:13 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - build\windows\x64\runner\Debug\data\flutter_assets\assets\tiles\generate_map.dart:51:13 - Missing a required trailing comma. Try adding a trailing comma. - require_trailing_commas
    info - build\windows\x64\runner\Debug\data\flutter_assets\assets\tiles\generate_map.dart:59:22 - Missing a newline at the beginning of a multiline string. Try adding a newline at the beginning of the string. - leading_newlines_in_multiline_strings
    info - build\windows\x64\runner\Debug\data\flutter_assets\assets\tiles\generate_map.dart:75:3 - Don't invoke 'print' in production code. Try using a logging framework. - avoid_print
-   info - build\windows\x64\runner\Debug\data\flutter_assets\assets\tiles\generate_map.dart:79:3 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - build\windows\x64\runner\Debug\data\flutter_assets\assets\tiles\generate_map.dart:79:3 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - build\windows\x64\runner\Debug\data\flutter_assets\assets\tiles\generate_map.dart:80:8 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
    info - build\windows\x64\runner\Debug\data\flutter_assets\assets\tiles\generate_tiles.dart:15:3 - Don't invoke 'print' in production code. Try using a logging framework. - avoid_print
-   info - generate_city.dart:10:3 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - generate_city.dart:10:3 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - generate_city.dart:11:3 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - generate_city.dart:11:3 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - generate_city.dart:12:3 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - generate_city.dart:12:3 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - generate_city.dart:16:8 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - generate_city.dart:17:10 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - generate_city.dart:19:7 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - generate_city.dart:19:7 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - generate_city.dart:19:21 - Unnecessary use of parentheses. Try removing the parentheses. - unnecessary_parenthesis
-   info - generate_city.dart:28:3 - Missing a required trailing comma. Try adding a trailing comma. - require_trailing_commas
-   info - generate_city.dart:32:3 - Missing a required trailing comma. Try adding a trailing comma. - require_trailing_commas
-   info - generate_city.dart:36:3 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - generate_city.dart:36:3 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - generate_city.dart:37:12 - The variable 'p' should be final. Try making the variable final. - prefer_final_in_for_each
-   info - generate_city.dart:37:24 - Statements in a for should be enclosed in a block. Try wrapping the statement in a block. - curly_braces_in_flow_control_structures
-   info - generate_city.dart:38:12 - The variable 'c' should be final. Try making the variable final. - prefer_final_in_for_each
-   info - generate_city.dart:38:23 - Statements in a for should be enclosed in a block. Try wrapping the statement in a block. - curly_braces_in_flow_control_structures
-   info - generate_city.dart:39:12 - The variable 'b' should be final. Try making the variable final. - prefer_final_in_for_each
-   info - generate_city.dart:39:28 - Statements in a for should be enclosed in a block. Try wrapping the statement in a block. - curly_braces_in_flow_control_structures
-   info - generate_city.dart:43:3 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - generate_city.dart:43:3 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - generate_city.dart:44:3 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - generate_city.dart:45:12 - The variable 'obj' should be final. Try making the variable final. - prefer_final_in_for_each
-   info - generate_city.dart:49:3 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - generate_city.dart:53:3 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - generate_city.dart:55:3 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - generate_city.dart:61:3 - Missing a required trailing comma. Try adding a trailing comma. - require_trailing_commas
-   info - generate_city.dart:64:8 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - generate_city.dart:65:10 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - generate_city.dart:68:7 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - generate_city.dart:68:7 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - generate_city.dart:70:7 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - generate_city.dart:79:9 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - generate_city.dart:79:9 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - generate_city.dart:80:9 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - generate_city.dart:80:9 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - generate_city.dart:81:9 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - generate_city.dart:81:9 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - generate_city.dart:85:11 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - generate_city.dart:85:11 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - generate_city.dart:88:11 - Missing a required trailing comma. Try adding a trailing comma. - require_trailing_commas
-   info - generate_city.dart:92:28 - Statements in an if should be enclosed in a block. Try wrapping the statement in a block. - curly_braces_in_flow_control_structures
-   info - generate_city.dart:93:32 - Statements in an if should be enclosed in a block. Try wrapping the statement in a block. - curly_braces_in_flow_control_structures
-   info - generate_city.dart:94:33 - Statements in an if should be enclosed in a block. Try wrapping the statement in a block. - curly_braces_in_flow_control_structures
-   info - generate_city.dart:95:32 - Statements in an if should be enclosed in a block. Try wrapping the statement in a block. - curly_braces_in_flow_control_structures
-   info - generate_city.dart:96:33 - Statements in an if should be enclosed in a block. Try wrapping the statement in a block. - curly_braces_in_flow_control_structures
-   info - generate_city.dart:98:14 - Statements in an if should be enclosed in a block. Try wrapping the statement in a block. - curly_braces_in_flow_control_structures
-   info - generate_city.dart:100:9 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - generate_city.dart:100:9 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - generate_city.dart:105:11 - Missing a required trailing comma. Try adding a trailing comma. - require_trailing_commas
-   info - generate_city.dart:112:8 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - generate_city.dart:113:10 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - generate_city.dart:114:8 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - generate_city.dart:114:8 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - generate_city.dart:114:32 - Unnecessary use of parentheses. Try removing the parentheses. - unnecessary_parenthesis
-   info - generate_city.dart:115:8 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - generate_city.dart:115:8 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - generate_city.dart:115:30 - Unnecessary use of parentheses. Try removing the parentheses. - unnecessary_parenthesis
-   info - generate_city.dart:118:13 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - generate_city.dart:118:13 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - generate_city.dart:123:13 - Missing a required trailing comma. Try adding a trailing comma. - require_trailing_commas
-   info - generate_city.dart:131:5 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - generate_city.dart:131:5 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - generate_city.dart:132:5 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
-   info - generate_city.dart:133:5 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
-   info - generate_city.dart:134:10 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - generate_city.dart:135:7 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - generate_city.dart:135:7 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - generate_city.dart:136:7 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - generate_city.dart:136:7 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - generate_city.dart:137:7 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - generate_city.dart:137:22 - Multiple variables declared on a single line. Try splitting the variable declarations into multiple lines. - avoid_multiple_declarations_per_line
-   info - generate_city.dart:147:22 - Missing a newline at the beginning of a multiline string. Try adding a newline at the beginning of the string. - leading_newlines_in_multiline_strings
-   info - generate_city.dart:164:3 - Don't invoke 'print' in production code. Try using a logging framework. - avoid_print
-   info - generate_city.dart:168:3 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - generate_city.dart:168:3 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - generate_city.dart:169:8 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - generate_city.dart:172:10 - Use interpolation to compose strings and values. Try using string interpolation to build the composite string. - prefer_interpolation_to_compose_strings
-   info - inspect_assets.dart:5:3 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - inspect_assets.dart:5:3 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
+   info - generate_city.dart:100:34 - Statements in an if should be enclosed in a block. Try wrapping the statement in a block. - curly_braces_in_flow_control_structures
+   info - generate_city.dart:101:33 - Statements in an if should be enclosed in a block. Try wrapping the statement in a block. - curly_braces_in_flow_control_structures
+   info - generate_city.dart:102:32 - Statements in an if should be enclosed in a block. Try wrapping the statement in a block. - curly_braces_in_flow_control_structures
+   info - generate_city.dart:103:33 - Statements in an if should be enclosed in a block. Try wrapping the statement in a block. - curly_braces_in_flow_control_structures
+   info - generate_city.dart:105:14 - Statements in an if should be enclosed in a block. Try wrapping the statement in a block. - curly_braces_in_flow_control_structures
+   info - generate_city.dart:139:5 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
+   info - generate_city.dart:140:5 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
+   info - generate_city.dart:155:22 - Missing a newline at the beginning of a multiline string. Try adding a newline at the beginning of the string. - leading_newlines_in_multiline_strings
+   info - generate_city.dart:172:3 - Don't invoke 'print' in production code. Try using a logging framework. - avoid_print
    info - inspect_assets.dart:23:5 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
-   info - inspect_assets.dart:24:14 - The variable 'f' should be final. Try making the variable final. - prefer_final_in_for_each
    info - inspect_assets.dart:33:5 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
-   info - inspect_assets.dart:36:7 - Local variables should be final. Try making the variable final. - prefer_final_locals
    info - inspect_assets.dart:47:3 - Don't invoke 'print' in production code. Try using a logging framework. - avoid_print
-   info - lib\app\game_app.dart:7:1 - Sort directive sections alphabetically. Try sorting the directives. - directives_ordering
-   info - lib\app\game_app.dart:9:1 - Sort directive sections alphabetically. Try sorting the directives. - directives_ordering
-   info - lib\app\game_app.dart:10:1 - Sort directive sections alphabetically. Try sorting the directives. - directives_ordering
-   info - lib\app\game_app.dart:14:9 - Parameter 'key' could be a super parameter. Trying converting 'key' to a super parameter. - use_super_parameters
-   info - lib\app\game_app.dart:31:9 - Parameter 'key' could be a super parameter. Trying converting 'key' to a super parameter. - use_super_parameters
-   info - lib\game\config\game_config.dart:4:30 - Unnecessary use of a 'double' literal. Try using an 'int' literal. - prefer_int_literals
-   info - lib\game\config\game_config.dart:5:31 - Unnecessary use of a 'double' literal. Try using an 'int' literal. - prefer_int_literals
-   info - lib\game\config\tuning.dart:16:44 - Unnecessary use of a 'double' literal. Try using an 'int' literal. - prefer_int_literals
-   info - lib\game\config\tuning.dart:17:44 - Unnecessary use of a 'double' literal. Try using an 'int' literal. - prefer_int_literals
-   info - lib\game\config\tuning.dart:22:38 - Unnecessary use of a 'double' literal. Try using an 'int' literal. - prefer_int_literals
-   info - lib\game\config\tuning.dart:23:39 - Unnecessary use of a 'double' literal. Try using an 'int' literal. - prefer_int_literals
-   info - lib\game\config\tuning.dart:38:43 - Unnecessary use of a 'double' literal. Try using an 'int' literal. - prefer_int_literals
-   info - lib\game\config\tuning.dart:54:52 - Unnecessary use of a 'double' literal. Try using an 'int' literal. - prefer_int_literals
-   info - lib\game\config\tuning.dart:55:45 - Unnecessary use of a 'double' literal. Try using an 'int' literal. - prefer_int_literals
-   info - lib\game\config\tuning.dart:56:53 - Unnecessary use of a 'double' literal. Try using an 'int' literal. - prefer_int_literals
-   info - lib\game\config\tuning.dart:57:48 - Unnecessary use of a 'double' literal. Try using an 'int' literal. - prefer_int_literals
-   info - lib\game\entities\npc\npc_component.dart:5:1 - Sort directive sections alphabetically. Try sorting the directives. - directives_ordering
-   info - lib\game\entities\npc\npc_component.dart:26:23 - Unnecessary use of a 'double' literal. Try using an 'int' literal. - prefer_int_literals
-   info - lib\game\entities\npc\npc_component.dart:64:85 - Unnecessary use of a 'double' literal. Try using an 'int' literal. - prefer_int_literals
-   info - lib\game\entities\npc\npc_component.dart:67:5 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
-   info - lib\game\entities\npc\npc_component.dart:87:5 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
-   info - lib\game\entities\npc\npc_component.dart:89:5 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - lib\game\entities\npc\npc_component.dart:91:7 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - lib\game\entities\npc\npc_component.dart:91:7 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - lib\game\entities\npc\npc_component.dart:106:47 - Use the constant 'Offset.zero' rather than a constructor returning the same object. Try using 'Offset.zero'. - use_named_constants
-   info - lib\game\entities\npc\npc_component.dart:109:5 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
-   info - lib\game\entities\npc\npc_component.dart:113:5 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
-   info - lib\game\entities\npc\npc_component.dart:115:5 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
-   info - lib\game\entities\player\player_component.dart:4:1 - Sort directive sections alphabetically. Try sorting the directives. - directives_ordering
-   info - lib\game\entities\player\player_component.dart:6:1 - Place 'dart:' imports before other imports. Try sorting the directives. - directives_ordering
-   info - lib\game\entities\player\player_component.dart:8:1 - Sort directive sections alphabetically. Try sorting the directives. - directives_ordering
-   info - lib\game\entities\player\player_component.dart:19:3 - Constructor declarations should be before non-constructor declarations. Try moving the constructor declaration before all other members. - sort_constructors_first
-   info - lib\game\entities\player\player_component.dart:31:23 - Unnecessary use of a 'double' literal. Try using an 'int' literal. - prefer_int_literals
-   info - lib\game\entities\player\player_component.dart:84:7 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
-   info - lib\game\entities\player\player_component.dart:84:104 - The expression has no effect and can be removed. Try removing the expression. - noop_primitive_operations
-   info - lib\game\entities\player\player_component.dart:85:105 - The expression has no effect and can be removed. Try removing the expression. - noop_primitive_operations
-   info - lib\game\entities\player\player_component.dart:94:5 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - lib\game\entities\player\player_component.dart:117:121 - The expression has no effect and can be removed. Try removing the expression. - noop_primitive_operations
-   info - lib\game\entities\player\player_component.dart:118:122 - The expression has no effect and can be removed. Try removing the expression. - noop_primitive_operations
-   info - lib\game\entities\player\player_component.dart:133:5 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
-   info - lib\game\entities\player\player_component.dart:136:5 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - lib\game\entities\player\player_component.dart:139:7 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - lib\game\entities\player\player_component.dart:139:7 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - lib\game\entities\player\player_component.dart:142:7 - Use 'const' for final variables initialized to a constant value. Try replacing 'final' with 'const'. - prefer_const_declarations
-   info - lib\game\entities\player\player_component.dart:151:7 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - lib\game\entities\player\player_component.dart:151:7 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - lib\game\entities\player\player_component.dart:168:5 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - lib\game\entities\player\player_component.dart:168:28 - Unnecessary use of a 'double' literal. Try using an 'int' literal. - prefer_int_literals
-   info - lib\game\entities\player\player_component.dart:169:5 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - lib\game\entities\player\player_component.dart:169:29 - Unnecessary use of a 'double' literal. Try using an 'int' literal. - prefer_int_literals
-   info - lib\game\entities\player\player_component.dart:172:7 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - lib\game\entities\player\player_component.dart:172:7 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - lib\game\entities\player\player_component.dart:175:7 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - lib\game\entities\player\player_component.dart:175:7 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - lib\game\entities\player\player_component.dart:186:5 - Missing a required trailing comma. Try adding a trailing comma. - require_trailing_commas
-   info - lib\game\entities\player\player_component.dart:188:5 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
-   info - lib\game\entities\player\player_component.dart:194:5 - Missing a required trailing comma. Try adding a trailing comma. - require_trailing_commas
-   info - lib\game\entities\player\player_component.dart:196:5 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
-   info - lib\game\entities\player\player_component.dart:202:5 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
-   info - lib\game\entities\player\player_component.dart:207:5 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
-   info - lib\game\entities\player\player_component.dart:210:47 - Use 'const' with the constructor to improve performance. Try adding the 'const' keyword to the constructor invocation. - prefer_const_constructors
-   info - lib\game\entities\player\player_component.dart:213:5 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
-   info - lib\game\entities\player\player_component.dart:218:5 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
-   info - lib\game\entities\player\player_component.dart:225:5 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
-   info - lib\game\entities\player\player_component.dart:249:8 - Unnecessary override. Try adding behavior in the overriding member or removing the override. - unnecessary_overrides
-   info - lib\game\input\mobile_controls.dart:74:22 - Unnecessary use of parentheses. Try removing the parentheses. - unnecessary_parenthesis
-   info - lib\game\input\mobile_controls.dart:115:24 - Unnecessary use of parentheses. Try removing the parentheses. - unnecessary_parenthesis
-   info - lib\game\systems\collision_system.dart:3:1 - Sort directive sections alphabetically. Try sorting the directives. - directives_ordering
-   info - lib\game\systems\collision_system.dart:4:1 - Sort directive sections alphabetically. Try sorting the directives. - directives_ordering
-   info - lib\game\systems\collision_system.dart:39:5 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
-   info - lib\game\systems\collision_system.dart:40:5 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
-   info - lib\game\ui\game_over_overlay.dart:4:1 - Sort directive sections alphabetically. Try sorting the directives. - directives_ordering
-   info - lib\game\ui\game_over_overlay.dart:43:48 - The value of the argument is redundant because it matches the default value. Try removing the argument. - avoid_redundant_argument_values
-   info - lib\game\ui\game_over_overlay.dart:73:75 - Unnecessary use of a 'double' literal. Try using an 'int' literal. - prefer_int_literals
-   info - lib\game\ui\hud_overlay.dart:56:66 - Unnecessary use of a 'double' literal. Try using an 'int' literal. - prefer_int_literals
-   info - lib\game\ui\hud_overlay.dart:137:28 - Missing a newline at the end of the file. Try adding a newline at the end of the file. - eol_at_end_of_file
-   info - lib\game\ui\map_selection_overlay.dart:3:1 - Sort directive sections alphabetically. Try sorting the directives. - directives_ordering
-   info - lib\game\ui\map_selection_overlay.dart:5:1 - Sort directive sections alphabetically. Try sorting the directives. - directives_ordering
-   info - lib\game\ui\map_selection_overlay.dart:10:9 - Constructor declarations should be before non-constructor declarations. Try moving the constructor declaration before all other members. - sort_constructors_first
-   info - lib\game\ui\map_selection_overlay.dart:10:55 - Required named parameters should be before optional named parameters. Try moving the required named parameter to be before any optional named parameters. - always_put_required_named_parameters_first
+   info - lib\game\entities\npc\npc_component.dart:111:5 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
+   info - lib\game\entities\npc\npc_component.dart:131:5 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
+   info - lib\game\entities\npc\npc_component.dart:150:47 - Use the constant 'Offset.zero' rather than a constructor returning the same object. Try using 'Offset.zero'. - use_named_constants
+   info - lib\game\entities\npc\npc_component.dart:153:5 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
+   info - lib\game\entities\npc\npc_component.dart:157:5 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
+   info - lib\game\entities\npc\npc_component.dart:163:27 - Use the constant 'Offset.zero' rather than a constructor returning the same object. Try using 'Offset.zero'. - use_named_constants
+   info - lib\game\entities\npc\npc_component.dart:166:27 - Use the constant 'Offset.zero' rather than a constructor returning the same object. Try using 'Offset.zero'. - use_named_constants
+   info - lib\game\entities\player\player_component.dart:96:7 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
+   info - lib\game\entities\player\player_component.dart:212:5 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
+   info - lib\game\entities\player\player_component.dart:240:58 - Use 'isEven' rather than '% 2'. Try using 'isEven'. - use_is_even_rather_than_modulo
+   info - lib\game\entities\player\player_component.dart:271:5 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
+   info - lib\game\entities\player\player_component.dart:279:5 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
+   info - lib\game\entities\player\player_component.dart:285:5 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
+   info - lib\game\entities\player\player_component.dart:290:5 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
+   info - lib\game\entities\player\player_component.dart:293:47 - Use the constant 'Offset.zero' rather than a constructor returning the same object. Try using 'Offset.zero'. - use_named_constants
+   info - lib\game\entities\player\player_component.dart:296:5 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
+   info - lib\game\entities\player\player_component.dart:301:5 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
+   info - lib\game\entities\player\player_component.dart:308:5 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
+   info - lib\game\systems\collision_system.dart:64:7 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
+   info - lib\game\systems\collision_system.dart:97:5 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
+   info - lib\game\systems\collision_system.dart:98:5 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
+   info - lib\game\ui\hud_overlay.dart:136:28 - Missing a newline at the end of the file. Try adding a newline at the end of the file. - eol_at_end_of_file
    info - lib\game\ui\map_selection_overlay.dart:102:10 - 'Future'-returning calls in a non-'async' function. Try converting the enclosing function to be 'async' and then 'await' the future, or wrap the expression in 'unawaited'. - discarded_futures
    info - lib\game\util\math.dart:55:7 - Invalid assignment to the parameter 'angle'. Try using a local variable in place of the parameter. - parameter_assignments
    info - lib\game\util\math.dart:58:7 - Invalid assignment to the parameter 'angle'. Try using a local variable in place of the parameter. - parameter_assignments
-   info - lib\game\vodkania_game.dart:1:8 - The import of 'package:flame/components.dart' is unnecessary because all of the used elements are also provided by the import of 'package:flame/game.dart'. Try removing the import directive. - unnecessary_import
-   info - lib\game\vodkania_game.dart:6:1 - Sort directive sections alphabetically. Try sorting the directives. - directives_ordering
-   info - lib\game\vodkania_game.dart:9:1 - Sort directive sections alphabetically. Try sorting the directives. - directives_ordering
-   info - lib\game\vodkania_game.dart:10:1 - Sort directive sections alphabetically. Try sorting the directives. - directives_ordering
-   info - lib\game\vodkania_game.dart:12:1 - Place 'dart:' imports before other imports. Try sorting the directives. - directives_ordering
-   info - lib\game\vodkania_game.dart:54:13 - The value of the argument is redundant because it matches the default value. Try removing the argument. - avoid_redundant_argument_values
-   info - lib\game\vodkania_game.dart:56:20 - The value of the argument is redundant because it matches the default value. Try removing the argument. - avoid_redundant_argument_values
-   info - lib\game\vodkania_game.dart:69:10 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - lib\game\vodkania_game.dart:88:5 - Use 'const' for final variables initialized to a constant value. Try replacing 'final' with 'const'. - prefer_const_declarations
-   info - lib\game\vodkania_game.dart:88:11 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - lib\game\vodkania_game.dart:92:10 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - lib\game\vodkania_game.dart:99:7 - Missing a required trailing comma. Try adding a trailing comma. - require_trailing_commas
-   info - lib\game\vodkania_game.dart:155:5 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
-   info - lib\game\vodkania_game.dart:156:5 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
-   info - lib\game\vodkania_map.dart:3:1 - Sort directive sections alphabetically. Try sorting the directives. - directives_ordering
-   info - lib\game\vodkania_map.dart:15:3 - Constructor declarations should be before non-constructor declarations. Try moving the constructor declaration before all other members. - sort_constructors_first
+   info - lib\game\vodkania_game.dart:177:5 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
+   info - lib\game\vodkania_game.dart:178:5 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
+   info - lib\game\vodkania_game.dart:187:5 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
+   info - lib\game\vodkania_game.dart:188:5 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
+   info - lib\game\vodkania_game.dart:192:5 - 'Future'-returning calls in a non-'async' function. Try converting the enclosing function to be 'async' and then 'await' the future, or wrap the expression in 'unawaited'. - discarded_futures
    info - lib\game\world\camera_setup.dart:11:5 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
-   info - lib\game\world\parliament_map_component.dart:3:1 - Sort directive sections alphabetically. Try sorting the directives. - directives_ordering
-   info - lib\game\world\parliament_map_component.dart:5:1 - Sort directive sections alphabetically. Try sorting the directives. - directives_ordering
-   info - lib\game\world\parliament_map_component.dart:16:3 - Constructor declarations should be before non-constructor declarations. Try moving the constructor declaration before all other members. - sort_constructors_first
-   info - lib\game\world\parliament_map_component.dart:35:5 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
-   info - lib\game\world\parliament_map_component.dart:38:14 - Missing a required trailing comma. Try adding a trailing comma. - require_trailing_commas
-   info - lib\game\world\parliament_map_component.dart:44:12 - Unnecessary use of a 'double' literal. Try using an 'int' literal. - prefer_int_literals
-   info - lib\game\world\parliament_map_component.dart:78:3 - Missing a required trailing comma. Try adding a trailing comma. - require_trailing_commas
-   info - lib\game\world\parliament_map_component.dart:88:3 - Missing a required trailing comma. Try adding a trailing comma. - require_trailing_commas
-   info - lib\game\world\parliament_map_component.dart:118:8 - Invalid use of a private type in a public API. Try making the private type public, or making the API that uses the private type also be private. - library_private_types_in_public_api
-   info - lib\game\world\parliament_map_component.dart:122:50 - Missing a required trailing comma. Try adding a trailing comma. - require_trailing_commas
-   info - lib\game\world\parliament_map_component.dart:127:31 - Missing a required trailing comma. Try adding a trailing comma. - require_trailing_commas
-   info - lib\game\world\parliament_map_component.dart:143:43 - Use interpolation to compose strings and values. Try using string interpolation to build the composite string. - prefer_interpolation_to_compose_strings
-   info - lib\game\world\parliament_map_component.dart:151:7 - Catch clause should use 'on' to specify the type of exception being caught. Try adding an 'on' clause before the 'catch'. - avoid_catches_without_on_clauses
-   info - lib\game\world\parliament_map_component.dart:156:10 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - lib\game\world\parliament_map_component.dart:162:43 - Use interpolation to compose strings and values. Try using string interpolation to build the composite string. - prefer_interpolation_to_compose_strings
-   info - lib\game\world\parliament_map_component.dart:181:9 - Catch clause should use 'on' to specify the type of exception being caught. Try adding an 'on' clause before the 'catch'. - avoid_catches_without_on_clauses
-   info - lib\game\world\parliament_map_component.dart:187:10 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - lib\game\world\parliament_map_component.dart:191:39 - Use interpolation to compose strings and values. Try using string interpolation to build the composite string. - prefer_interpolation_to_compose_strings
-   info - lib\game\world\parliament_map_component.dart:199:9 - Catch clause should use 'on' to specify the type of exception being caught. Try adding an 'on' clause before the 'catch'. - avoid_catches_without_on_clauses
-   info - lib\game\world\parliament_map_component.dart:205:10 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - lib\game\world\parliament_map_component.dart:209:43 - Use interpolation to compose strings and values. Try using string interpolation to build the composite string. - prefer_interpolation_to_compose_strings
-   info - lib\game\world\parliament_map_component.dart:217:9 - Catch clause should use 'on' to specify the type of exception being caught. Try adding an 'on' clause before the 'catch'. - avoid_catches_without_on_clauses
-   info - lib\game\world\parliament_map_component.dart:223:10 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - lib\game\world\parliament_map_component.dart:227:9 - Catch clause should use 'on' to specify the type of exception being caught. Try adding an 'on' clause before the 'catch'. - avoid_catches_without_on_clauses
-   info - lib\game\world\parliament_map_component.dart:233:10 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - lib\game\world\parliament_map_component.dart:237:9 - Catch clause should use 'on' to specify the type of exception being caught. Try adding an 'on' clause before the 'catch'. - avoid_catches_without_on_clauses
-   info - lib\game\world\parliament_map_component.dart:246:36 - Use interpolation to compose strings and values. Try using string interpolation to build the composite string. - prefer_interpolation_to_compose_strings
-   info - lib\game\world\parliament_map_component.dart:254:7 - Catch clause should use 'on' to specify the type of exception being caught. Try adding an 'on' clause before the 'catch'. - avoid_catches_without_on_clauses
-   info - lib\game\world\parliament_map_component.dart:265:3 - Constructor declarations should be before non-constructor declarations. Try moving the constructor declaration before all other members. - sort_constructors_first
-   info - lib\game\world\world_builder.dart:5:1 - Sort directive sections alphabetically. Try sorting the directives. - directives_ordering
-   info - lib\game\world\world_builder.dart:7:1 - Sort directive sections alphabetically. Try sorting the directives. - directives_ordering
-   info - lib\game\world\world_builder.dart:7:8 - The import of 'package:flame/sprite.dart' is unnecessary because all of the used elements are also provided by the import of 'package:flame/components.dart'. Try removing the import directive. - unnecessary_import
-   info - lib\game\world\world_builder.dart:12:3 - Constructor declarations should be before non-constructor declarations. Try moving the constructor declaration before all other members. - sort_constructors_first
-   info - lib\game\world\world_builder.dart:20:6 - Missing a required trailing comma. Try adding a trailing comma. - require_trailing_commas
-   info - lib\game\world\world_builder.dart:46:5 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
-   info - lib\game\world\world_builder.dart:55:5 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
-   info - lib\game\world\world_builder.dart:64:5 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
-   info - lib\game\world\world_builder.dart:73:5 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
-   info - lib\game\world\world_builder.dart:99:5 - Use 'const' for final variables initialized to a constant value. Try replacing 'final' with 'const'. - prefer_const_declarations
-   info - lib\game\world\world_builder.dart:135:5 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
-   info - lib\main.dart:7:1 - Sort directive sections alphabetically. Try sorting the directives. - directives_ordering
-   info - lib\main.dart:8:1 - Sort directive sections alphabetically. Try sorting the directives. - directives_ordering
-   info - lib\main.dart:11:1 - Sort directive sections alphabetically. Try sorting the directives. - directives_ordering
-   info - lib\main.dart:13:1 - Sort directive sections alphabetically. Try sorting the directives. - directives_ordering
+   info - lib\game\world\parliament_map_component.dart:34:5 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
+   info - lib\game\world\parliament_map_component.dart:117:8 - Invalid use of a private type in a public API. Try making the private type public, or making the API that uses the private type also be private. - library_private_types_in_public_api
+   info - lib\game\world\parliament_map_component.dart:150:7 - Catch clause should use 'on' to specify the type of exception being caught. Try adding an 'on' clause before the 'catch'. - avoid_catches_without_on_clauses
+   info - lib\game\world\parliament_map_component.dart:180:9 - Catch clause should use 'on' to specify the type of exception being caught. Try adding an 'on' clause before the 'catch'. - avoid_catches_without_on_clauses
+   info - lib\game\world\parliament_map_component.dart:198:9 - Catch clause should use 'on' to specify the type of exception being caught. Try adding an 'on' clause before the 'catch'. - avoid_catches_without_on_clauses
+   info - lib\game\world\parliament_map_component.dart:216:9 - Catch clause should use 'on' to specify the type of exception being caught. Try adding an 'on' clause before the 'catch'. - avoid_catches_without_on_clauses
+   info - lib\game\world\parliament_map_component.dart:226:9 - Catch clause should use 'on' to specify the type of exception being caught. Try adding an 'on' clause before the 'catch'. - avoid_catches_without_on_clauses
+   info - lib\game\world\parliament_map_component.dart:236:9 - Catch clause should use 'on' to specify the type of exception being caught. Try adding an 'on' clause before the 'catch'. - avoid_catches_without_on_clauses
+   info - lib\game\world\parliament_map_component.dart:253:7 - Catch clause should use 'on' to specify the type of exception being caught. Try adding an 'on' clause before the 'catch'. - avoid_catches_without_on_clauses
+   info - lib\game\world\world_builder.dart:44:5 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
+   info - lib\game\world\world_builder.dart:53:5 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
+   info - lib\game\world\world_builder.dart:62:5 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
+   info - lib\game\world\world_builder.dart:71:5 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
+   info - lib\game\world\world_builder.dart:133:5 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
    info - lib\main.dart:20:18 - 'Future'-returning calls in a non-'async' function. Try converting the enclosing function to be 'async' and then 'await' the future, or wrap the expression in 'unawaited'. - discarded_futures
    info - lib\main.dart:26:18 - 'Future'-returning calls in a non-'async' function. Try converting the enclosing function to be 'async' and then 'await' the future, or wrap the expression in 'unawaited'. - discarded_futures
-   info - lib\main.dart:34:29 - Closure should be a tearoff. Try using a tearoff rather than a closure. - unnecessary_lambdas
-   info - lib\main.dart:36:31 - Closure should be a tearoff. Try using a tearoff rather than a closure. - unnecessary_lambdas
-   info - lib\main.dart:40:69 - Don't cast a nullable value to a non-nullable type. Try adding a not-null assertion ('!') to make the type non-nullable. - cast_nullable_to_non_nullable
-   info - lib\main.dart:42:39 - Don't cast a nullable value to a non-nullable type. Try adding a not-null assertion ('!') to make the type non-nullable. - cast_nullable_to_non_nullable
-   info - lib\main.dart:44:87 - Don't cast a nullable value to a non-nullable type. Try adding a not-null assertion ('!') to make the type non-nullable. - cast_nullable_to_non_nullable
-   info - lib\main.dart:50:4 - Missing a required trailing comma. Try adding a trailing comma. - require_trailing_commas
    info - tools\game_tool.dart:4:3 - Don't invoke 'print' in production code. Try using a logging framework. - avoid_print
    info - tools\sprite_generator.dart:6:3 - Don't invoke 'print' in production code. Try using a logging framework. - avoid_print
    info - tools\sprite_generator.dart:11:3 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
@@ -360,65 +87,14 @@ warning - lib\game\world\world_builder.dart:4:8 - Unused import: 'package:vodkan
    info - tools\sprite_generator.dart:15:3 - Don't invoke 'print' in production code. Try using a logging framework. - avoid_print
    info - tools\sprite_generator.dart:16:3 - Don't invoke 'print' in production code. Try using a logging framework. - avoid_print
    info - tools\sprite_generator.dart:25:16 - Unreachable member 'hairColor' in an executable library. Try referencing the member or removing it. - unreachable_from_main
-   info - tools\sprite_generator.dart:33:5 - Use 'const' for final variables initialized to a constant value. Try replacing 'final' with 'const'. - prefer_const_declarations
-   info - tools\sprite_generator.dart:34:5 - Use 'const' for final variables initialized to a constant value. Try replacing 'final' with 'const'. - prefer_const_declarations
-   info - tools\sprite_generator.dart:37:10 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
    info - tools\sprite_generator.dart:44:5 - Don't invoke 'print' in production code. Try using a logging framework. - avoid_print
-   info - tools\sprite_generator.dart:48:5 - Use 'const' for final variables initialized to a constant value. Try replacing 'final' with 'const'. - prefer_const_declarations
-   info - tools\sprite_generator.dart:49:5 - Use 'const' for final variables initialized to a constant value. Try replacing 'final' with 'const'. - prefer_const_declarations
-   info - tools\sprite_generator.dart:52:10 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
    info - tools\sprite_generator.dart:59:5 - Don't invoke 'print' in production code. Try using a logging framework. - avoid_print
-   info - tools\sprite_generator.dart:63:5 - Use 'const' for final variables initialized to a constant value. Try replacing 'final' with 'const'. - prefer_const_declarations
-   info - tools\sprite_generator.dart:64:5 - Use 'const' for final variables initialized to a constant value. Try replacing 'final' with 'const'. - prefer_const_declarations
-   info - tools\sprite_generator.dart:67:10 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
    info - tools\sprite_generator.dart:74:5 - Don't invoke 'print' in production code. Try using a logging framework. - avoid_print
-   info - tools\sprite_generator.dart:78:76 - Missing a required trailing comma. Try adding a trailing comma. - require_trailing_commas
    info - tools\sprite_generator.dart:85:22 - Use 'isEven' rather than '% 2'. Try using 'isEven'. - use_is_even_rather_than_modulo
    info - tools\sprite_generator.dart:100:24 - Use 'isEven' rather than '% 2'. Try using 'isEven'. - use_is_even_rather_than_modulo
-   info - tools\sprite_generator.dart:188:70 - Missing a required trailing comma. Try adding a trailing comma. - require_trailing_commas
-   info - tools\sprite_generator.dart:189:10 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - tools\sprite_generator.dart:190:12 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - tools\sprite_generator.dart:205:11 - Missing a required trailing comma. Try adding a trailing comma. - require_trailing_commas
    info - tools\world_sprite_pack_generator.dart:7:3 - Unnecessary duplication of receiver. Try using a cascade to avoid the duplication. - cascade_invocations
-   info - tools\world_sprite_pack_generator.dart:35:71 - Missing a required trailing comma. Try adding a trailing comma. - require_trailing_commas
-   info - tools\world_sprite_pack_generator.dart:40:73 - Missing a required trailing comma. Try adding a trailing comma. - require_trailing_commas
-   info - tools\world_sprite_pack_generator.dart:42:75 - Missing a required trailing comma. Try adding a trailing comma. - require_trailing_commas
-   info - tools\world_sprite_pack_generator.dart:45:40 - Missing a required trailing comma. Try adding a trailing comma. - require_trailing_commas
-   info - tools\world_sprite_pack_generator.dart:53:65 - Missing a required trailing comma. Try adding a trailing comma. - require_trailing_commas
-   info - tools\world_sprite_pack_generator.dart:55:64 - Missing a required trailing comma. Try adding a trailing comma. - require_trailing_commas
-   info - tools\world_sprite_pack_generator.dart:57:65 - Missing a required trailing comma. Try adding a trailing comma. - require_trailing_commas
-   info - tools\world_sprite_pack_generator.dart:59:64 - Missing a required trailing comma. Try adding a trailing comma. - require_trailing_commas
-   info - tools\world_sprite_pack_generator.dart:61:63 - Missing a required trailing comma. Try adding a trailing comma. - require_trailing_commas
-   info - tools\world_sprite_pack_generator.dart:63:63 - Missing a required trailing comma. Try adding a trailing comma. - require_trailing_commas
-   info - tools\world_sprite_pack_generator.dart:65:62 - Missing a required trailing comma. Try adding a trailing comma. - require_trailing_commas
-   info - tools\world_sprite_pack_generator.dart:67:63 - Missing a required trailing comma. Try adding a trailing comma. - require_trailing_commas
-   info - tools\world_sprite_pack_generator.dart:69:62 - Missing a required trailing comma. Try adding a trailing comma. - require_trailing_commas
-   info - tools\world_sprite_pack_generator.dart:71:61 - Missing a required trailing comma. Try adding a trailing comma. - require_trailing_commas
-   info - tools\world_sprite_pack_generator.dart:73:61 - Missing a required trailing comma. Try adding a trailing comma. - require_trailing_commas
-   info - tools\world_sprite_pack_generator.dart:75:60 - Missing a required trailing comma. Try adding a trailing comma. - require_trailing_commas
-   info - tools\world_sprite_pack_generator.dart:77:61 - Missing a required trailing comma. Try adding a trailing comma. - require_trailing_commas
-   info - tools\world_sprite_pack_generator.dart:79:60 - Missing a required trailing comma. Try adding a trailing comma. - require_trailing_commas
-   info - tools\world_sprite_pack_generator.dart:81:59 - Missing a required trailing comma. Try adding a trailing comma. - require_trailing_commas
-   info - tools\world_sprite_pack_generator.dart:110:11 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - tools\world_sprite_pack_generator.dart:127:7 - Missing a required trailing comma. Try adding a trailing comma. - require_trailing_commas
-   info - tools\world_sprite_pack_generator.dart:142:38 - Use a raw string to avoid using escapes. Try making the string a raw string and removing the escapes. - use_raw_strings
-   info - tools\world_sprite_pack_generator.dart:147:43 - Use a raw string to avoid using escapes. Try making the string a raw string and removing the escapes. - use_raw_strings
-   info - tools\world_sprite_pack_generator.dart:149:16 - Missing a required trailing comma. Try adding a trailing comma. - require_trailing_commas
-   info - tools\world_sprite_pack_generator.dart:343:30 - Use 'const' with the constructor to improve performance. Try adding the 'const' keyword to the constructor invocation. - prefer_const_constructors
-   info - tools\world_sprite_pack_generator.dart:350:28 - Use 'const' with the constructor to improve performance. Try adding the 'const' keyword to the constructor invocation. - prefer_const_constructors
-   info - tools\world_sprite_pack_generator.dart:357:26 - Use 'const' with the constructor to improve performance. Try adding the 'const' keyword to the constructor invocation. - prefer_const_constructors
-   info - tools\world_sprite_pack_generator.dart:397:64 - Missing a required trailing comma. Try adding a trailing comma. - require_trailing_commas
-   info - tools\world_sprite_pack_generator.dart:455:76 - Missing a required trailing comma. Try adding a trailing comma. - require_trailing_commas
    info - tools\world_sprite_pack_generator.dart:522:20 - Unreachable member 'black' in an executable library. Try referencing the member or removing it. - unreachable_from_main
-   info - update_real_city.dart:4:3 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - update_real_city.dart:4:3 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - update_real_city.dart:5:3 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - update_real_city.dart:5:3 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - update_real_city.dart:6:3 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - update_real_city.dart:6:3 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
-   info - update_real_city.dart:7:3 - Local variables should be final. Try making the variable final. - prefer_final_locals
-   info - update_real_city.dart:7:3 - Unnecessary type annotation on a local variable. Try removing the type annotation. - omit_local_variable_types
    info - update_real_city.dart:10:22 - Missing a newline at the beginning of a multiline string. Try adding a newline at the beginning of the string. - leading_newlines_in_multiline_strings
    info - update_real_city.dart:23:3 - Don't invoke 'print' in production code. Try using a logging framework. - avoid_print
 
-420 issues found.
+96 issues found.

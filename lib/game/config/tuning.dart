@@ -13,14 +13,14 @@ class Tuning {
   static const double civilianSpeed = 100;
   static const double civilianRadius = 15;
   static const double civilianWanderRadius = 50;
-  static const double civilianPanicRange = 150.0;
-  static const double civilianPanicSpeed = 120.0;
+  static const double civilianPanicRange = 150;
+  static const double civilianPanicSpeed = 120;
 
   // Factions
   static const int numFactions = 3;
   static const int factionStartingSupporters = 3;
-  static const double factionSpeed = 100.0;
-  static const double factionRadius = 18.0;
+  static const double factionSpeed = 100;
+  static const double factionRadius = 18;
   static const double factionCollectionRadius = 80;
 
   // Police
@@ -35,7 +35,7 @@ class Tuning {
 
   // Combat/Encounters
   static const int encounterRadius = 40;
-  static const double encounterCooldown = 1.0; // seconds between encounters
+  static const double encounterCooldown = 1; // seconds between encounters
   static const double supporterTransferRatio = 0.2; // 20% of difference
   static const int minSupporterTransfer = 1;
   static const int maxSupporterTransfer = 10;
@@ -51,8 +51,8 @@ class Tuning {
   static const int gogglesBonus = 3;
 
   // Difficulty scaling
-  static const double difficultyIncreaseInterval = 60.0; // seconds
-  static const double policeSpeedIncrease = 10.0; // per difficulty level
-  static const double policeSpawnIntervalDecrease = 2.0; // per difficulty level
-  static const double minPoliceSpawnInterval = 10.0;
+  static const double difficultyIncreaseInterval = 60; // seconds
+  static const double policeSpeedIncrease = 10; // per difficulty level
+  static const double policeSpawnIntervalDecrease = 2; // per difficulty level
+  static const double minPoliceSpawnInterval = 10;
 }

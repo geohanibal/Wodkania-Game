@@ -1,15 +1,15 @@
-import 'package:flame/components.dart';
+import 'dart:math' as math;
+
 import 'package:flame/game.dart';
 import 'package:flutter/material.dart';
 import 'package:vodkania_game/game/config/game_config.dart';
-import 'package:vodkania_game/game/entities/player/player_component.dart';
 import 'package:vodkania_game/game/entities/npc/npc_component.dart';
-import 'package:vodkania_game/game/systems/collision_system.dart';
-import 'package:vodkania_game/game/world/world_builder.dart';
-import 'package:vodkania_game/game/world/camera_setup.dart';
+import 'package:vodkania_game/game/entities/player/player_component.dart';
 import 'package:vodkania_game/game/state/game_state.dart';
 import 'package:vodkania_game/game/state/overlays.dart';
-import 'dart:math' as math;
+import 'package:vodkania_game/game/systems/collision_system.dart';
+import 'package:vodkania_game/game/world/camera_setup.dart';
+import 'package:vodkania_game/game/world/world_builder.dart';
 
 /// Main game class for Vodkania Competitive
 class VodkaniaGame extends FlameGame with HasCollisionDetection {
@@ -51,9 +51,7 @@ class VodkaniaGame extends FlameGame with HasCollisionDetection {
     // 1. Setup Human Player
     player = PlayerComponent(
       position: Vector2(GameConfig.worldWidth / 2, GameConfig.worldHeight * 0.8),
-      isAI: false,
       playerName: 'You',
-      playerColor: const Color(0xFF3498DB), // Blue
     );
     allPlayers.add(player);
     await world.add(player);
@@ -65,8 +63,14 @@ class VodkaniaGame extends FlameGame with HasCollisionDetection {
       const Color(0xFF9B59B6), // Purple
       const Color(0xFFE67E22), // Orange
     ];
+    final archetypes = [
+      AiArchetype.collector,
+      AiArchetype.aggressive,
+      AiArchetype.opportunist,
+      AiArchetype.aggressive,
+    ];
     final random = math.Random();
-    for (int i = 0; i < 4; i++) {
+    for (var i = 0; i < 4; i++) {
         final aiPlayer = PlayerComponent(
           position: Vector2(
             random.nextDouble() * GameConfig.worldWidth * 0.8 + GameConfig.worldWidth * 0.1,
@@ -75,6 +79,7 @@ class VodkaniaGame extends FlameGame with HasCollisionDetection {
           isAI: true,
           playerName: 'AI ${i + 1}',
           playerColor: aiColors[i],
+          aiArchetype: archetypes[i],
         );
         allPlayers.add(aiPlayer);
         await world.add(aiPlayer);
@@ -85,21 +90,38 @@ class VodkaniaGame extends FlameGame with HasCollisionDetection {
     add(camera);
 
     // 4. Spawn NPCs
-    final int totalNpcsToSpawn = 100;
-    GameState.instance.currentRun!.totalNpcs = totalNpcsToSpawn;
-    GameState.instance.currentRun!.remainingNpcs = totalNpcsToSpawn;
+    const totalNpcsToSpawn = 100;
+    var totalPoints = 0;
 
-    for (int i = 0; i < totalNpcsToSpawn; i++) {
+    for (var i = 0; i < totalNpcsToSpawn; i++) {
+      final rand = random.nextDouble();
+      var tier = NpcTier.normal;
+      var points = 1;
+
+      if (rand > 0.95) {
+        tier = NpcTier.legendary;
+        points = 5;
+      } else if (rand > 0.8) {
+        tier = NpcTier.rare;
+        points = 3;
+      }
+      
+      totalPoints += points;
+
       final npc = NpcComponent(
+        tier: tier,
         // Distribute randomly across playable space
         position: Vector2(
           random.nextDouble() * GameConfig.worldWidth * 0.8 + GameConfig.worldWidth * 0.1,
           random.nextDouble() * GameConfig.worldHeight * 0.8 + GameConfig.worldHeight * 0.1,
-        )
+        ),
       );
       allNpcs.add(npc);
       await world.add(npc);
     }
+
+    GameState.instance.currentRun!.totalNpcs = totalPoints;
+    GameState.instance.currentRun!.remainingNpcs = totalPoints;
 
     // 5. Initialize Collision System
     collisionSystem = CollisionSystem(players: allPlayers, npcs: allNpcs);

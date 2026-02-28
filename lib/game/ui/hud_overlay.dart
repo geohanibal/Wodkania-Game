@@ -1,4 +1,3 @@
-import 'dart:math';
 import 'package:flutter/material.dart';
 
 import 'package:vodkania_game/game/state/game_state.dart';
@@ -53,7 +52,7 @@ class HudOverlay extends StatelessWidget {
                       // List all 5 players
                       ...players.map((p) {
                         return Padding(
-                          padding: const EdgeInsets.only(bottom: 4.0),
+                          padding: const EdgeInsets.only(bottom: 4),
                           child: Row(
                             mainAxisSize: MainAxisSize.min,
                             children: [

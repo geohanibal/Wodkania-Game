@@ -71,7 +71,7 @@ class _MobileControlsState extends State<MobileControls> {
     final dx = _touchPosition!.dx - _joystickPosition!.dx;
     final dy = _touchPosition!.dy - _joystickPosition!.dy;
 
-    final distance = (dx * dx + dy * dy);
+    final distance = dx * dx + dy * dy;
     if (distance < 1) {
       widget.onDirectionChanged(Vector2.zero());
       return;
@@ -112,7 +112,7 @@ class _JoystickPainter extends CustomPainter {
     if (touchPosition != null) {
       final dx = touchPosition!.dx - center.dx;
       final dy = touchPosition!.dy - center.dy;
-      final distance = (dx * dx + dy * dy);
+      final distance = dx * dx + dy * dy;
 
       Offset knobPos;
       if (distance > 50 * 50) {

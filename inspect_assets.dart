@@ -2,7 +2,7 @@ import 'dart:io';
 import 'package:image/image.dart';
 
 void main() {
-  StringBuffer sb = StringBuffer();
+  final sb = StringBuffer();
 
   void checkImage(String path) {
     final file = File(path);
@@ -21,7 +21,7 @@ void main() {
   if (oDir.existsSync()) {
     final entities = oDir.listSync(recursive: true).whereType<File>().toList();
     entities.sort((a, b) => a.path.compareTo(b.path));
-    for (var f in entities) {
+    for (final f in entities) {
       if (f.path.endsWith('.png')) checkImage(f.path);
     }
   }
@@ -33,7 +33,7 @@ void main() {
     entities.sort((a, b) => a.path.compareTo(b.path));
     // Sample first few
     for (var i = 0; i < entities.length; i++) {
-      var f = entities[i];
+      final f = entities[i];
       if (f.path.endsWith('.png')) checkImage(f.path);
       if (i > 100) break; // Don't overflow output
     }

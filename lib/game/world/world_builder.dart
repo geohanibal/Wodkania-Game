@@ -1,15 +1,13 @@
 import 'dart:ui';
+
 import 'package:flame/components.dart';
 import 'package:vodkania_game/game/config/game_config.dart';
-import 'package:vodkania_game/game/world/parliament_map_component.dart';
+import 'package:vodkania_game/game/state/game_state.dart';
 import 'package:vodkania_game/game/vodkania_map.dart';
 
-import 'package:flame/sprite.dart';
-import 'package:vodkania_game/game/state/game_state.dart';
-
 class PhotoMap extends PositionComponent {
-  final String assetPath;
   PhotoMap({required this.assetPath});
+  final String assetPath;
 
   @override
   Future<void> onLoad() async {
@@ -17,7 +15,7 @@ class PhotoMap extends PositionComponent {
     add(SpriteComponent(
       sprite: sprite,
       size: Vector2(GameConfig.worldWidth, GameConfig.worldHeight),
-    ));
+    ),);
   }
 }
 
@@ -96,7 +94,7 @@ class GridComponent extends Component {
       ..strokeWidth = 2
       ..style = PaintingStyle.stroke;
 
-    final gridSize = 100.0;
+    const gridSize = 100.0;
 
     // Draw vertical lines
     for (double x = 0; x <= GameConfig.worldWidth; x += gridSize) {

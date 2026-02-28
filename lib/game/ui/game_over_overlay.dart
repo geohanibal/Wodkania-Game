@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:vodkania_game/game/entities/player/player_component.dart';
 import 'package:vodkania_game/game/state/game_state.dart';
 import 'package:vodkania_game/game/vodkania_game.dart';
-import 'package:vodkania_game/game/entities/player/player_component.dart';
 
 /// Game over overlay
 class GameOverOverlay extends StatelessWidget {
@@ -43,7 +43,7 @@ class GameOverOverlay extends StatelessWidget {
                 fontSize: 56,
                 fontWeight: FontWeight.bold,
                 shadows: const [
-                  Shadow(blurRadius: 8, color: Colors.black, offset: Offset(2, 2)),
+                  Shadow(blurRadius: 8, offset: Offset(2, 2)),
                 ],
               ),
             ),
@@ -73,7 +73,7 @@ class GameOverOverlay extends StatelessWidget {
                         // Sort players one last time
                         ...((List<PlayerComponent>.from(game!.allPlayers)..sort((a, b) => b.npcCount.compareTo(a.npcCount))).map((p) {
                           return Padding(
-                            padding: const EdgeInsets.symmetric(vertical: 6.0),
+                            padding: const EdgeInsets.symmetric(vertical: 6),
                             child: Row(
                               mainAxisSize: MainAxisSize.min,
                               children: [

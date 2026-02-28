@@ -1,10 +1,10 @@
 import 'dart:io';
 
 void main() {
-  int width = 60;
-  int height = 60;
-  List<int> grassData = List.filled(width * height, 1);
-  List<int> propsData = List.filled(width * height, 0);
+  const width = 60;
+  const height = 60;
+  final grassData = List<int>.filled(width * height, 1);
+  final propsData = List<int>.filled(width * height, 0);
 
   // Generate TMX
   final tmxContent = '''<?xml version="1.0" encoding="UTF-8"?>

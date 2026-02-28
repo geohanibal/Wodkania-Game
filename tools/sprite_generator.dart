@@ -30,11 +30,11 @@ class SpriteGenerator {
   static const beardColor = 0xFF3D2817; // Brown beard
 
   void generateWalkRight() {
-    final width = frameWidth * 8; // 8 frames
-    final height = frameHeight;
+    const width = frameWidth * 8; // 8 frames
+    const height = frameHeight;
     final image = img.Image(width: width, height: height);
 
-    for (int frame = 0; frame < 8; frame++) {
+    for (var frame = 0; frame < 8; frame++) {
       final x = frame * frameWidth;
       _drawWalkFrame(image, x, 0, frame, false);
     }
@@ -45,11 +45,11 @@ class SpriteGenerator {
   }
 
   void generateWalkLeft() {
-    final width = frameWidth * 8; // 8 frames
-    final height = frameHeight;
+    const width = frameWidth * 8; // 8 frames
+    const height = frameHeight;
     final image = img.Image(width: width, height: height);
 
-    for (int frame = 0; frame < 8; frame++) {
+    for (var frame = 0; frame < 8; frame++) {
       final x = frame * frameWidth;
       _drawWalkFrame(image, x, 0, frame, true);
     }
@@ -60,11 +60,11 @@ class SpriteGenerator {
   }
 
   void generateIdle() {
-    final width = frameWidth * 4; // 4 frames
-    final height = frameHeight;
+    const width = frameWidth * 4; // 4 frames
+    const height = frameHeight;
     final image = img.Image(width: width, height: height);
 
-    for (int frame = 0; frame < 4; frame++) {
+    for (var frame = 0; frame < 4; frame++) {
       final x = frame * frameWidth;
       _drawIdleFrame(image, x, 0, frame);
     }
@@ -75,7 +75,7 @@ class SpriteGenerator {
   }
 
   void _drawWalkFrame(
-      img.Image image, int offsetX, int offsetY, int frame, bool facingLeft) {
+      img.Image image, int offsetX, int offsetY, int frame, bool facingLeft,) {
     final centerX = offsetX + frameWidth ~/ 2;
     final centerY = offsetY + frameHeight ~/ 2;
 
@@ -185,9 +185,9 @@ class SpriteGenerator {
   }
 
   void _fillRect(
-      img.Image image, int x, int y, int width, int height, int color) {
-    for (int dy = 0; dy < height; dy++) {
-      for (int dx = 0; dx < width; dx++) {
+      img.Image image, int x, int y, int width, int height, int color,) {
+    for (var dy = 0; dy < height; dy++) {
+      for (var dx = 0; dx < width; dx++) {
         _setPixel(image, x + dx, y + dy, color);
       }
     }
@@ -201,7 +201,7 @@ class SpriteGenerator {
           (color >> 16) & 0xFF, // R
           (color >> 8) & 0xFF, // G
           color & 0xFF, // B
-          (color >> 24) & 0xFF // A
+          (color >> 24) & 0xFF, // A
           );
     }
   }
