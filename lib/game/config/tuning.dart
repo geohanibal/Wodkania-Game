@@ -23,15 +23,7 @@ class Tuning {
   static const double factionRadius = 18;
   static const double factionCollectionRadius = 80;
 
-  // Police
-  static const int initialPoliceCount = 10;
-  static const double policeSpeed = 100;
-  static const double policeRadius = 25;
-  static const double policeDetectionRadius = 200;
-  static const double policeSpawnInterval = 30; // seconds
-  static const int policeCaptureThreshold =
-      10; // min supporters to avoid game over
-  static const int policeCaptureStealAmount = 5; // supporters stolen on capture
+
 
   // Combat/Encounters
   static const int encounterRadius = 40;
@@ -52,7 +44,4 @@ class Tuning {
 
   // Difficulty scaling
   static const double difficultyIncreaseInterval = 60; // seconds
-  static const double policeSpeedIncrease = 10; // per difficulty level
-  static const double policeSpawnIntervalDecrease = 2; // per difficulty level
-  static const double minPoliceSpawnInterval = 10;
 }
