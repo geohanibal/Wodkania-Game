@@ -1,0 +1,676 @@
+[ +189 ms] Artifact Instance of 'MaterialFonts' is not required, skipping update.
+[   +1 ms] Artifact Instance of 'GradleWrapper' is not required, skipping update.
+[        ] Artifact Instance of 'AndroidGenSnapshotArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterWebSdk' is not required, skipping update.
+[   +1 ms] Artifact Instance of 'LegacyCanvasKitRemover' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterSdk' is not required, skipping update.
+[        ] Artifact Instance of 'WindowsEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FontSubsetArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'PubDependencies' is not required, skipping update.
+[   +1 ms] executing: [C:\Users\49172\flutter\flutter/] git -c log.showSignature=false log HEAD -n 1 --pretty=format:%ad --date=iso
+[  +79 ms] Exit code 0 from: git -c log.showSignature=false log HEAD -n 1 --pretty=format:%ad --date=iso
+[        ] 2026-01-08 10:49:17 -0800
+[  +50 ms] Artifact Instance of 'AndroidGenSnapshotArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterWebSdk' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterEngineStamp' is not required, skipping update.
+[        ] Artifact Instance of 'LegacyCanvasKitRemover' is not required, skipping update.
+[   +3 ms] Artifact Instance of 'WindowsEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[  +72 ms] Artifact Instance of 'AndroidGenSnapshotArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterWebSdk' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterEngineStamp' is not required, skipping update.
+[        ] Artifact Instance of 'LegacyCanvasKitRemover' is not required, skipping update.
+[   +3 ms] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[  +53 ms] executing: [C:\Users\49172\Desktop\wodkania-game\Wodkania-Game/] C:\Users\49172\flutter\flutter\bin\cache\dart-sdk\bin\dart pub --suppress-analytics --directory . get --example
+Resolving dependencies...
+Downloading packages...
+  _fe_analyzer_shared 91.0.0 (97.0.0 available)
+  analyzer 8.4.1 (11.0.0 available)
+  characters 1.4.0 (1.4.1 available)
+  matcher 0.12.17 (0.12.19 available)
+  material_color_utilities 0.11.1 (0.13.0 available)
+  meta 1.17.0 (1.18.1 available)
+  test 1.26.3 (1.30.0 available)
+  test_api 0.7.7 (0.7.10 available)
+  test_core 0.6.12 (0.6.16 available)
+  very_good_analysis 10.1.0 (10.2.0 available)
+Got dependencies!
+10 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+[ +556 ms] Found plugin audioplayers at C:\Users\49172\AppData\Local\Pub\Cache\hosted\pub.dev\audioplayers-6.5.1\
+[   +7 ms] Found plugin path_provider at C:\Users\49172\AppData\Local\Pub\Cache\hosted\pub.dev\path_provider-2.1.5\
+[   +1 ms] Found plugin path_provider_windows at C:\Users\49172\AppData\Local\Pub\Cache\hosted\pub.dev\path_provider_windows-2.3.0\
+[   +6 ms] Found plugin path_provider_linux at C:\Users\49172\AppData\Local\Pub\Cache\hosted\pub.dev\path_provider_linux-2.2.1\
+[   +4 ms] Found plugin path_provider_foundation at C:\Users\49172\AppData\Local\Pub\Cache\hosted\pub.dev\path_provider_foundation-2.6.0\
+[  +12 ms] Found plugin path_provider_android at C:\Users\49172\AppData\Local\Pub\Cache\hosted\pub.dev\path_provider_android-2.2.22\
+[   +3 ms] Found plugin audioplayers_windows at C:\Users\49172\AppData\Local\Pub\Cache\hosted\pub.dev\audioplayers_windows-4.2.1\
+[   +2 ms] Found plugin audioplayers_web at C:\Users\49172\AppData\Local\Pub\Cache\hosted\pub.dev\audioplayers_web-5.1.1\
+[   +2 ms] Found plugin audioplayers_linux at C:\Users\49172\AppData\Local\Pub\Cache\hosted\pub.dev\audioplayers_linux-4.2.1\
+[   +1 ms] Found plugin audioplayers_darwin at C:\Users\49172\AppData\Local\Pub\Cache\hosted\pub.dev\audioplayers_darwin-6.3.0\
+[   +1 ms] Found plugin audioplayers_android at C:\Users\49172\AppData\Local\Pub\Cache\hosted\pub.dev\audioplayers_android-5.2.1\
+[ +109 ms] Found plugin audioplayers at C:\Users\49172\AppData\Local\Pub\Cache\hosted\pub.dev\audioplayers-6.5.1\
+[   +3 ms] Found plugin path_provider at C:\Users\49172\AppData\Local\Pub\Cache\hosted\pub.dev\path_provider-2.1.5\
+[   +1 ms] Found plugin path_provider_windows at C:\Users\49172\AppData\Local\Pub\Cache\hosted\pub.dev\path_provider_windows-2.3.0\
+[   +4 ms] Found plugin path_provider_linux at C:\Users\49172\AppData\Local\Pub\Cache\hosted\pub.dev\path_provider_linux-2.2.1\
+[   +2 ms] Found plugin path_provider_foundation at C:\Users\49172\AppData\Local\Pub\Cache\hosted\pub.dev\path_provider_foundation-2.6.0\
+[   +5 ms] Found plugin path_provider_android at C:\Users\49172\AppData\Local\Pub\Cache\hosted\pub.dev\path_provider_android-2.2.22\
+[   +2 ms] Found plugin audioplayers_windows at C:\Users\49172\AppData\Local\Pub\Cache\hosted\pub.dev\audioplayers_windows-4.2.1\
+[   +2 ms] Found plugin audioplayers_web at C:\Users\49172\AppData\Local\Pub\Cache\hosted\pub.dev\audioplayers_web-5.1.1\
+[   +2 ms] Found plugin audioplayers_linux at C:\Users\49172\AppData\Local\Pub\Cache\hosted\pub.dev\audioplayers_linux-4.2.1\
+[   +1 ms] Found plugin audioplayers_darwin at C:\Users\49172\AppData\Local\Pub\Cache\hosted\pub.dev\audioplayers_darwin-6.3.0\
+[   +1 ms] Found plugin audioplayers_android at C:\Users\49172\AppData\Local\Pub\Cache\hosted\pub.dev\audioplayers_android-5.2.1\
+[  +13 ms] Skipping generating generated_plugin_registrant.h because it is up-to-date.
+[   +5 ms] Skipping generating generated_plugin_registrant.cc because it is up-to-date.
+[   +1 ms] Skipping generating generated_plugins.cmake because it is up-to-date.
+[ +154 ms] Initializing file store
+[   +2 ms] Done initializing file store
+[  +13 ms] Skipping target: gen_localizations
+[   +3 ms] gen_dart_plugin_registrant: Starting due to {InvalidatedReasonKind.inputChanged: The following inputs have updated contents: C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\.dart_tool\package_config.json,C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\.dart_tool\flutter_build\dart_plugin_registrant.dart}
+[ +127 ms] Found plugin audioplayers at C:\Users\49172\AppData\Local\Pub\Cache\hosted\pub.dev\audioplayers-6.5.1\
+[   +3 ms] Found plugin path_provider at C:\Users\49172\AppData\Local\Pub\Cache\hosted\pub.dev\path_provider-2.1.5\
+[   +1 ms] Found plugin path_provider_windows at C:\Users\49172\AppData\Local\Pub\Cache\hosted\pub.dev\path_provider_windows-2.3.0\
+[   +4 ms] Found plugin path_provider_linux at C:\Users\49172\AppData\Local\Pub\Cache\hosted\pub.dev\path_provider_linux-2.2.1\
+[   +2 ms] Found plugin path_provider_foundation at C:\Users\49172\AppData\Local\Pub\Cache\hosted\pub.dev\path_provider_foundation-2.6.0\
+[   +5 ms] Found plugin path_provider_android at C:\Users\49172\AppData\Local\Pub\Cache\hosted\pub.dev\path_provider_android-2.2.22\
+[   +2 ms] Found plugin audioplayers_windows at C:\Users\49172\AppData\Local\Pub\Cache\hosted\pub.dev\audioplayers_windows-4.2.1\
+[   +2 ms] Found plugin audioplayers_web at C:\Users\49172\AppData\Local\Pub\Cache\hosted\pub.dev\audioplayers_web-5.1.1\
+[   +2 ms] Found plugin audioplayers_linux at C:\Users\49172\AppData\Local\Pub\Cache\hosted\pub.dev\audioplayers_linux-4.2.1\
+[   +1 ms] Found plugin audioplayers_darwin at C:\Users\49172\AppData\Local\Pub\Cache\hosted\pub.dev\audioplayers_darwin-6.3.0\
+[   +1 ms] Found plugin audioplayers_android at C:\Users\49172\AppData\Local\Pub\Cache\hosted\pub.dev\audioplayers_android-5.2.1\
+[   +8 ms] Skipping generating dart_plugin_registrant.dart because it is up-to-date.
+[        ] gen_dart_plugin_registrant: Complete
+[   +2 ms] Skipping target: _composite
+[   +2 ms] complete
+[   +5 ms] Launching lib\main.dart on Windows in debug mode...
+[   +3 ms] C:\Users\49172\flutter\flutter\bin\cache\dart-sdk\bin\dartaotruntime.exe C:\Users\49172\flutter\flutter\bin\cache\dart-sdk\bin\snapshots\frontend_server_aot.dart.snapshot --sdk-root C:\Users\49172\flutter\flutter\bin\cache\artifacts\engine\common\flutter_patched_sdk/ --incremental --target=flutter --experimental-emit-debug-metadata -DFLUTTER_VERSION=3.38.6 -DFLUTTER_CHANNEL=stable -DFLUTTER_GIT_URL=https://github.com/flutter/flutter.git -DFLUTTER_FRAMEWORK_REVISION=8b87286849 -DFLUTTER_ENGINE_REVISION=78fc3012e4 -DFLUTTER_DART_VERSION=3.10.7 --output-dill C:\Users\49172\AppData\Local\Temp\flutter_tools.4946c4ed\flutter_tool.6f6c8711\app.dill --packages C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\.dart_tool\package_config.json -Ddart.vm.profile=false -Ddart.vm.product=false --enable-asserts --track-widget-creation --filesystem-scheme org-dartlang-root --initialize-from-dill build\3db25abb13e29dfd86c6b9b67f5bf79a.cache.dill.track.dill --source file:///C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/.dart_tool/flutter_build/dart_plugin_registrant.dart --source package:flutter/src/dart_plugin_registrant.dart -Dflutter.dart_plugin_registrant=file:///C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/.dart_tool/flutter_build/dart_plugin_registrant.dart --verbosity=error --enable-experiment=alternative-invalidation-strategy
+[  +35 ms] executing: C:\Program Files (x86)\Microsoft Visual Studio\Installer\vswhere.exe -format json -products * -utf8 -latest -version 16 -requires Microsoft.VisualStudio.Workload.NativeDesktop Microsoft.VisualStudio.Component.VC.Tools.x86.x64 Microsoft.VisualStudio.Component.VC.CMake.Project
+[  +70 ms] Exit code 0 from: C:\Program Files (x86)\Microsoft Visual Studio\Installer\vswhere.exe -format json -products * -utf8 -latest -version 16 -requires Microsoft.VisualStudio.Workload.NativeDesktop Microsoft.VisualStudio.Component.VC.Tools.x86.x64 Microsoft.VisualStudio.Component.VC.CMake.Project
+[        ] [
+             {
+               "instanceId": "c3ecdac0",
+               "installDate": "2023-04-24T15:05:39Z",
+               "installationName": "VisualStudio/17.14.25+36915.13.-january.2026-",
+               "installationPath": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community",
+               "installationVersion": "17.14.36915.13",
+               "productId": "Microsoft.VisualStudio.Product.Community",
+               "productPath": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\devenv.exe",
+               "state": 4294967295,
+               "isComplete": true,
+               "isLaunchable": true,
+               "isPrerelease": false,
+               "isRebootRequired": false,
+               "displayName": "Visual Studio Community 2022",
+               "description": "Leistungsstarke IDE, kostenlos für Studenten, Open-Source-Mitwirkende und Einzelpersonen",
+               "channelId": "VisualStudio.17.Release",
+               "channelUri": "https://aka.ms/vs/17/release/channel",
+               "enginePath": "C:\\Program Files (x86)\\Microsoft Visual Studio\\Installer\\resources\\app\\ServiceHub\\Services\\Microsoft.VisualStudio.Setup.Service",
+               "installedChannelId": "VisualStudio.17.Release",
+               "installedChannelUri": "https://aka.ms/vs/17/release/channel",
+               "releaseNotes": "https://docs.microsoft.com/en-us/visualstudio/releases/2022/release-notes-v17.14#17.14.25",
+               "resolvedInstallationPath": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community",
+               "thirdPartyNotices": "https://go.microsoft.com/fwlink/?LinkId=661288",
+               "updateDate": "2026-01-29T13:29:11.8326169Z",
+               "catalog": {
+                 "buildBranch": "d17.14",
+                 "buildVersion": "17.14.36915.13",
+                 "id": "VisualStudio/17.14.25+36915.13.-january.2026-",
+                 "localBuild": "build-lab",
+                 "manifestName": "VisualStudio",
+                 "manifestType": "installer",
+                 "productDisplayVersion": "17.14.25 (January 2026)",
+                 "productLine": "Dev17",
+                 "productLineVersion": "2022",
+                 "productMilestone": "RTW",
+                 "productMilestoneIsPreRelease": "False",
+                 "productName": "Visual Studio",
+                 "productPatchVersion": "25",
+                 "productPreReleaseMilestoneSuffix": "1.0",
+                 "productReleaseNameSuffix": "(January 2026)",
+                 "productSemanticVersion": "17.14.25+36915.13.-january.2026-",
+                 "requiredEngineVersion": "3.14.2086.54749"
+               },
+               "properties": {
+                 "appLocalWPF": "false",
+                 "campaignId": "2030:387adb3c4eff67eae0baaabe90fe4626",
+                 "channelManifestId": "VisualStudio.17.Release/17.14.25+36915.13.-january.2026-",
+                 "nickname": "",
+                 "setupEngineFilePath": "C:\\Program Files (x86)\\Microsoft Visual Studio\\Installer\\setup.exe"
+               }
+             }
+           ]
+[   +4 ms] Building Windows application...
+[  +12 ms] <- compile package:vodkania_game/main.dart
+[   +1 ms] executing: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -S C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\windows -B C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64 -G Visual Studio 17 2022 -A x64 -DFLUTTER_TARGET_PLATFORM=windows-x64
+[  +71 ms] -- Selecting Windows SDK version 10.0.26100.0 to target Windows 10.0.22631.
+[  +70 ms] -- Nuget.exe not found, trying to download or use cached version.
+[+2291 ms] Feeds used:
+[        ]   C:\Users\49172\.nuget\packages\
+[        ]   https://api.nuget.org/v3/index.json
+[        ]   C:\Program Files (x86)\Microsoft SDKs\NuGetPackages\
+[ +112 ms] Package "Microsoft.Windows.ImplementationLibrary.1.0.210803.1" is already installed.
+[  +14 ms] -- Configuring done (2.5s)
+[ +749 ms] -- Generating done (0.7s)
+[  +35 ms] -- Build files have been written to: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64
+[  +99 ms] executing: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe --build C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64 --config Debug --target INSTALL --verbose
+[ +594 ms] Change Dir: 'C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64'
+[        ] Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" INSTALL.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+[ +111 ms] MSBuild version 17.14.40+3e7442088 for .NET Framework
+[  +51 ms] Build started 27.02.2026 21:31:15.
+[ +351 ms] Project "C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\INSTALL.vcxproj" on node 1 (default targets).
+[        ] Project "C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\INSTALL.vcxproj" (1) is building "C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\ZERO_CHECK.vcxproj" (2) on node 1 (default targets).
+[        ] PrepareForBuild:
+[        ]   Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+[   +5 ms] InitializeBuildStatus:
+[        ]   Creating "x64\Debug\ZERO_CHECK\ZERO_CHECK.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+[        ]   Touching "x64\Debug\ZERO_CHECK\ZERO_CHECK.tlog\unsuccessfulbuild".
+[  +32 ms] CustomBuild:
+[        ]   All outputs are up-to-date.
+[  +76 ms] FinalizeBuildStatus:
+[        ]   Deleting file "x64\Debug\ZERO_CHECK\ZERO_CHECK.tlog\unsuccessfulbuild".
+[   +1 ms]   Touching "x64\Debug\ZERO_CHECK\ZERO_CHECK.tlog\ZERO_CHECK.lastbuildstate".
+[   +2 ms] Done Building Project "C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\ZERO_CHECK.vcxproj" (default targets).
+[ +221 ms] Project "C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\INSTALL.vcxproj" (1) is building "C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\ALL_BUILD.vcxproj" (3) on node 1 (default targets).
+[        ] Project "C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\ALL_BUILD.vcxproj" (3) is building "C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\plugins\audioplayers_windows\audioplayers_windows_plugin.vcxproj" (4) on node 1 (default targets).
+[        ] Project "C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\plugins\audioplayers_windows\audioplayers_windows_plugin.vcxproj" (4) is building "C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\flutter\flutter_assemble.vcxproj" (5) on node 1 (default targets).
+[        ] PrepareForBuild:
+[        ]   Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+[   +3 ms] InitializeBuildStatus:
+[        ]   Creating "x64\Debug\flutter_assemble\flutter_assemble.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+[        ]   Touching "x64\Debug\flutter_assemble\flutter_assemble.tlog\unsuccessfulbuild".
+[  +15 ms] CustomBuild:
+[        ]   "The build of 'C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\CMakeFiles\2c7d9f72dee414bb54f14f8a77caa3cf\flutter_assemble.rule' depends on 'C:\USERS\49172\DESKTOP\WODKANIA-GAME\WODKANIA-GAME\WINDOWS\FLUTTER\EPHEMERAL\FLUTTER_WINDOWS.DLL' which is produced by the build of 'C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\CMakeFiles\b9f6dfc37f75e65d2c4c72ab82e213b0\flutter_windows.dll.rule'. The items cannot be built in parallel."
+[ +140 ms]   Generating C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/windows/flutter/ephemeral/flutter_windows.dll, C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/windows/flutter/ephemeral/flutter_export.h, C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/windows/flutter/ephemeral/flutter_windows.h, C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/windows/flutter/ephemeral/flutter_messenger.h, C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/windows/flutter/ephemeral/flutter_plugin_registrar.h, C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/windows/flutter/ephemeral/flutter_texture_registrar.h, C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/windows/flutter/ephemeral/cpp_client_wrapper/core_implementations.cc, C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/windows/flutter/ephemeral/cpp_client_wrapper/standard_codec.cc, C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/windows/flutter/ephemeral/cpp_client_wrapper/plugin_registrar.cc, C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/windows/flutter/ephemeral/cpp_client_wrapper/flutter_engine.cc, C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/windows/flutter/ephemeral/cpp_client_wrapper/flutter_view_controller.cc, _phony_
+[+6270 ms]   [ +244 ms] Artifact Instance of 'MaterialFonts' is not required, skipping update.
+[        ]   [   +1 ms] Artifact Instance of 'GradleWrapper' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'AndroidGenSnapshotArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'FlutterWebSdk' is not required, skipping update.
+[        ]   [   +1 ms] Artifact Instance of 'LegacyCanvasKitRemover' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'FlutterSdk' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'WindowsEngineArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'FontSubsetArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'PubDependencies' is not required, skipping update.
+[   +1 ms]   [  +15 ms] Artifact Instance of 'AndroidGenSnapshotArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'FlutterWebSdk' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'FlutterEngineStamp' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'LegacyCanvasKitRemover' is not required, skipping update.
+[   +4 ms]   [   +4 ms] Artifact Instance of 'WindowsEngineArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[   +1 ms]   [        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ]   [   +1 ms] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[  +93 ms]   [  +92 ms] Artifact Instance of 'MaterialFonts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'GradleWrapper' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'AndroidGenSnapshotArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'FlutterWebSdk' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'FlutterEngineStamp' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'LegacyCanvasKitRemover' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'FlutterSdk' is not required, skipping update.
+[   +2 ms]   [   +2 ms] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'FontSubsetArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'PubDependencies' is not required, skipping update.
+[  +59 ms]   [  +59 ms] Initializing file store
+[  +35 ms]   [  +35 ms] Done initializing file store
+[ +116 ms]   [ +116 ms] Skipping target: dart_build
+[   +2 ms]   [   +2 ms] Skipping target: gen_dart_plugin_registrant
+[+4751 ms]   [+4751 ms] Skipping target: unpack_windows
+[   +1 ms]   [   +1 ms] Skipping target: install_code_assets
+[        ]   [        ] Skipping target: gen_localizations
+[+1004 ms]   [+1003 ms] Skipping target: kernel_snapshot_program
+[  +29 ms]   [  +29 ms] invalidated build due to missing files: C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\DOES_NOT_EXIST_RERUN_FOR_WILDCARD913808967
+[ +563 ms]   [ +562 ms] debug_bundle_windows-x64_assets: Starting due to {InvalidatedReasonKind.inputMissing: The following inputs were missing: C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\DOES_NOT_EXIST_RERUN_FOR_WILDCARD913808967, InvalidatedReasonKind.inputChanged: The following inputs have updated contents: C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\assets\tiles\CityObjects.tsx}
+[ +321 ms]   [ +321 ms] Manifest contained wildcard assets. Inserting missing file into build graph to force rerun. for more information see #56466.
+[ +375 ms]   [ +375 ms] shaderc command: [C:\Users\49172\flutter\flutter\bin\cache\artifacts\engine\windows-x64\impellerc.exe, --sksl, --runtime-stage-gles, --runtime-stage-gles3, --runtime-stage-vulkan, --iplr, --sl=C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\flutter_assets\shaders/ink_sparkle.frag, --spirv=C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\flutter_assets\shaders/ink_sparkle.frag.spirv, --input=C:\Users\49172\flutter\flutter\packages\flutter\lib\src\material\shaders\ink_sparkle.frag, --input-type=frag, --include=C:\Users\49172\flutter\flutter\packages\flutter\lib\src\material\shaders, --include=C:\Users\49172\flutter\flutter\bin\cache\artifacts\engine\windows-x64\shader_lib]
+[   +4 ms]   [   +5 ms] shaderc command: [C:\Users\49172\flutter\flutter\bin\cache\artifacts\engine\windows-x64\impellerc.exe, --sksl, --runtime-stage-gles, --runtime-stage-gles3, --runtime-stage-vulkan, --iplr, --sl=C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\flutter_assets\shaders/stretch_effect.frag, --spirv=C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\flutter_assets\shaders/stretch_effect.frag.spirv, --input=C:\Users\49172\flutter\flutter\packages\flutter\lib\src\material\shaders\stretch_effect.frag, --input-type=frag, --include=C:\Users\49172\flutter\flutter\packages\flutter\lib\src\material\shaders, --include=C:\Users\49172\flutter\flutter\bin\cache\artifacts\engine\windows-x64\shader_lib]
+[+2217 ms]   [+2217 ms] debug_bundle_windows-x64_assets: Complete
+[ +656 ms]   [ +656 ms] Persisting file store
+[  +25 ms]   [  +24 ms] Done persisting file store
+[  +33 ms]   [  +34 ms] build succeeded.
+[        ]   [        ] "flutter assemble" took 10.326ms.
+[  +96 ms]   [  +95 ms] Running 1 shutdown hook
+[   +1 ms]   [   +1 ms] Shutdown hooks complete
+[  +47 ms]   [  +47 ms] exiting with code 0
+[ +106 ms] FinalizeBuildStatus:
+[        ]   Deleting file "x64\Debug\flutter_assemble\flutter_assemble.tlog\unsuccessfulbuild".
+[        ]   Touching "x64\Debug\flutter_assemble\flutter_assemble.tlog\flutter_assemble.lastbuildstate".
+[        ] Done Building Project "C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\flutter\flutter_assemble.vcxproj" (default targets).
+[  +37 ms] Project "C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\plugins\audioplayers_windows\audioplayers_windows_plugin.vcxproj" (4) is building "C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\flutter\flutter_wrapper_plugin.vcxproj" (6) on node 1 (default targets).
+[        ] PrepareForBuild:
+[        ]   Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+[   +2 ms] InitializeBuildStatus:
+[        ]   Creating "flutter_wrapper_plugin.dir\Debug\flutter_.C52DCC7E.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+[        ]   Touching "flutter_wrapper_plugin.dir\Debug\flutter_.C52DCC7E.tlog\unsuccessfulbuild".
+[   +3 ms] CustomBuild:
+[        ]   All outputs are up-to-date.
+[  +55 ms] ClCompile:
+[        ]   All outputs are up-to-date.
+[  +31 ms] Lib:
+[        ]   All outputs are up-to-date.
+[   +1 ms]   flutter_wrapper_plugin.vcxproj -> C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\flutter\Debug\flutter_wrapper_plugin.lib
+[  +20 ms] FinalizeBuildStatus:
+[        ]   Deleting file "flutter_wrapper_plugin.dir\Debug\flutter_.C52DCC7E.tlog\unsuccessfulbuild".
+[        ]   Touching "flutter_wrapper_plugin.dir\Debug\flutter_.C52DCC7E.tlog\flutter_wrapper_plugin.lastbuildstate".
+[        ] Done Building Project "C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\flutter\flutter_wrapper_plugin.vcxproj" (default targets).
+[   +9 ms] PrepareForBuild:
+[        ]   Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+[   +2 ms] InitializeBuildStatus:
+[        ]   Creating "audioplayers_windows_plugin.dir\Debug\audiopla.63C36CE0.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+[        ]   Touching "audioplayers_windows_plugin.dir\Debug\audiopla.63C36CE0.tlog\unsuccessfulbuild".
+[   +3 ms] CustomBuild:
+[        ]   All outputs are up-to-date.
+[  +27 ms] ClCompile:
+[        ]   All outputs are up-to-date.
+[  +31 ms] Link:
+[        ]   All outputs are up-to-date.
+[   +3 ms]   audioplayers_windows_plugin.vcxproj -> C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\plugins\audioplayers_windows\Debug\audioplayers_windows_plugin.dll
+[  +10 ms] FinalizeBuildStatus:
+[        ]   Deleting file "audioplayers_windows_plugin.dir\Debug\audiopla.63C36CE0.tlog\unsuccessfulbuild".
+[        ]   Touching "audioplayers_windows_plugin.dir\Debug\audiopla.63C36CE0.tlog\audioplayers_windows_plugin.lastbuildstate".
+[        ] Done Building Project "C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\plugins\audioplayers_windows\audioplayers_windows_plugin.vcxproj" (default targets).
+[  +34 ms] Project "C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\ALL_BUILD.vcxproj" (3) is building "C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\flutter\flutter_wrapper_app.vcxproj" (7) on node 1 (default targets).
+[        ] PrepareForBuild:
+[        ]   Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+[   +2 ms] InitializeBuildStatus:
+[        ]   Creating "flutter_wrapper_app.dir\Debug\flutter_.C078A4CC.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+[        ]   Touching "flutter_wrapper_app.dir\Debug\flutter_.C078A4CC.tlog\unsuccessfulbuild".
+[   +2 ms] CustomBuild:
+[        ]   All outputs are up-to-date.
+[  +12 ms] ClCompile:
+[        ]   All outputs are up-to-date.
+[   +4 ms] Lib:
+[        ]   All outputs are up-to-date.
+[        ]   flutter_wrapper_app.vcxproj -> C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\flutter\Debug\flutter_wrapper_app.lib
+[  +12 ms] FinalizeBuildStatus:
+[        ]   Deleting file "flutter_wrapper_app.dir\Debug\flutter_.C078A4CC.tlog\unsuccessfulbuild".
+[        ]   Touching "flutter_wrapper_app.dir\Debug\flutter_.C078A4CC.tlog\flutter_wrapper_app.lastbuildstate".
+[        ] Done Building Project "C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\flutter\flutter_wrapper_app.vcxproj" (default targets).
+[  +34 ms] Project "C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\ALL_BUILD.vcxproj" (3) is building "C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\runner\vodkania_game.vcxproj" (8) on node 1 (default targets).
+[        ] PrepareForBuild:
+[        ]   Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+[   +1 ms] InitializeBuildStatus:
+[        ]   Creating "vodkania_game.dir\Debug\vodkania_game.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+[        ]   Touching "vodkania_game.dir\Debug\vodkania_game.tlog\unsuccessfulbuild".
+[   +2 ms] CustomBuild:
+[        ]   All outputs are up-to-date.
+[  +23 ms] ClCompile:
+[        ]   All outputs are up-to-date.
+[   +7 ms] ResourceCompile:
+[        ]   All outputs are up-to-date.
+[  +11 ms] Link:
+[        ]   All outputs are up-to-date.
+[        ]   vodkania_game.vcxproj -> C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\runner\Debug\vodkania_game.exe
+[  +10 ms] FinalizeBuildStatus:
+[        ]   Deleting file "vodkania_game.dir\Debug\vodkania_game.tlog\unsuccessfulbuild".
+[        ]   Touching "vodkania_game.dir\Debug\vodkania_game.tlog\vodkania_game.lastbuildstate".
+[        ] Done Building Project "C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\runner\vodkania_game.vcxproj" (default targets).
+[  +12 ms] PrepareForBuild:
+[        ]   Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+[   +1 ms] InitializeBuildStatus:
+[        ]   Creating "x64\Debug\ALL_BUILD\ALL_BUILD.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+[        ]   Touching "x64\Debug\ALL_BUILD\ALL_BUILD.tlog\unsuccessfulbuild".
+[   +4 ms] CustomBuild:
+[        ]   All outputs are up-to-date.
+[  +12 ms] FinalizeBuildStatus:
+[        ]   Deleting file "x64\Debug\ALL_BUILD\ALL_BUILD.tlog\unsuccessfulbuild".
+[        ]   Touching "x64\Debug\ALL_BUILD\ALL_BUILD.tlog\ALL_BUILD.lastbuildstate".
+[        ] Done Building Project "C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\ALL_BUILD.vcxproj" (default targets).
+[   +7 ms] PrepareForBuild:
+[        ]   Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+[   +1 ms] InitializeBuildStatus:
+[        ]   Creating "x64\Debug\INSTALL\INSTALL.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+[        ]   Touching "x64\Debug\INSTALL\INSTALL.tlog\unsuccessfulbuild".
+[  +69 ms] CustomBuild:
+[        ]   1>
+[  +23 ms] PostBuildEvent:
+[        ]   setlocal
+[        ]   "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DBUILD_TYPE=Debug -P cmake_install.cmake
+[        ]   if %errorlevel% neq 0 goto :cmEnd
+[        ]   :cmEnd
+[        ]   endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+[        ]   :cmErrorLevel
+[        ]   exit /b %1
+[        ]   :cmDone
+[        ]   if %errorlevel% neq 0 goto :VCEnd
+[        ]   :VCEnd
+[  +93 ms]   -- Install configuration: "Debug"
+[   +2 ms]   -- Up-to-date: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/icudtl.dat
+[        ]   -- Up-to-date: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/flutter_windows.dll
+[        ]   -- Up-to-date: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/audioplayers_windows_plugin.dll
+[        ]   -- Up-to-date: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug
+[ +136 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets
+[   +5 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/AssetManifest.bin
+[   +6 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets
+[   +4 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images
+[   +4 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/BaseTiles.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings
+[  +10 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/building6.png
+[   +2 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_000.png
+[   +4 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_001.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_002.png
+[   +2 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_003.png
+[   +2 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_004.png
+[   +4 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_005.png
+[   +2 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_006.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_007.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_008.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_009.png
+[   +5 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_010.png
+[   +6 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_011.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_012.png
+[   +5 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_013.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_014.png
+[   +4 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_015.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_016.png
+[   +2 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_017.png
+[   +4 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_018.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_019.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_020.png
+[   +2 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_021.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_022.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_023.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_024.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_025.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_026.png
+[   +4 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_027.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_028.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_029.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_030.png
+[   +5 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_031.png
+[   +1 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_032.png
+[   +4 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_033.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_034.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_035.png
+[   +4 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_036.png
+[   +2 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_037.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_038.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_039.png
+[   +2 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_040.png
+[   +4 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_041.png
+[   +2 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_042.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_043.png
+[   +2 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_044.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_045.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_046.png
+[   +2 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_047.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_048.png
+[   +4 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_049.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_050.png
+[   +4 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_051.png
+[   +4 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_052.png
+[   +4 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_053.png
+[   +5 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_054.png
+[   +4 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_055.png
+[   +4 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_056.png
+[   +2 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_057.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_058.png
+[   +8 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_059.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_060.png
+[   +5 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_061.png
+[   +6 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_062.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_063.png
+[   +4 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_064.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_065.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_066.png
+[   +4 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_067.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_068.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_069.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_070.png
+[   +4 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_071.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_072.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_073.png
+[   +5 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_074.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_075.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_076.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_077.png
+[   +4 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_078.png
+[   +2 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_079.png
+[   +4 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_080.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_081.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_082.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_083.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_084.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_085.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_086.png
+[   +4 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_087.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_088.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_089.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_090.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_091.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_092.png
+[   +4 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_093.png
+[   +4 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_094.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_095.png
+[   +2 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_096.png
+[   +4 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_097.png
+[   +4 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_098.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_099.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_100.png
+[   +5 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_101.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_102.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_103.png
+[   +2 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_104.png
+[   +2 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_105.png
+[   +4 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_106.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_107.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_108.png
+[   +2 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_109.png
+[   +4 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_110.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_111.png
+[   +2 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_112.png
+[   +2 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_113.png
+[   +2 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_114.png
+[   +4 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_115.png
+[   +4 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_116.png
+[   +4 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_117.png
+[   +4 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_118.png
+[   +4 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_119.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_120.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_121.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_122.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_123.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_124.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_125.png
+[   +4 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_126.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_127.png
+[   +4 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/buildings/buildingTiles_128.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/CityObjects.tsx
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/generated_sprite_pack
+[   +5 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/generated_sprite_pack/characters
+[   +6 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/generated_sprite_pack/characters/civilian_back.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/generated_sprite_pack/characters/civilian_front.png
+[   +2 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/generated_sprite_pack/characters/civilian_left.png
+[   +4 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/generated_sprite_pack/characters/civilian_right.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/generated_sprite_pack/characters/civilian_top.png
+[   +4 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/generated_sprite_pack/characters/police_back.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/generated_sprite_pack/characters/police_front.png
+[   +2 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/generated_sprite_pack/characters/police_left.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/generated_sprite_pack/characters/police_right.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/generated_sprite_pack/characters/police_top.png
+[   +2 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/generated_sprite_pack/characters/swat_back.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/generated_sprite_pack/characters/swat_front.png
+[   +2 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/generated_sprite_pack/characters/swat_left.png
+[   +2 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/generated_sprite_pack/characters/swat_right.png
+[   +4 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/generated_sprite_pack/characters/swat_top.png
+[   +4 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/generated_sprite_pack/objects
+[   +4 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/generated_sprite_pack/objects/barricade_top.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/generated_sprite_pack/objects/bench_top.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/generated_sprite_pack/objects/bush_round_top.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/generated_sprite_pack/objects/bus_stop_top.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/generated_sprite_pack/objects/car_ambulance_top.png
+[   +4 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/generated_sprite_pack/objects/car_police_top.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/generated_sprite_pack/objects/car_sedan_top.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/generated_sprite_pack/objects/crosswalk_top.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/generated_sprite_pack/objects/road_straight_top.png
+[   +5 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/generated_sprite_pack/objects/street_lamp_top.png
+[   +4 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/generated_sprite_pack/objects/traffic_cone_top.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/generated_sprite_pack/objects/trash_bin_top.png
+[   +2 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/generated_sprite_pack/objects/tree_oak_top.png
+[   +2 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/generated_sprite_pack/objects/tree_pine_top.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/player
+[   +5 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/player/idle.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/player/player_back.png
+[   +5 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/player/player_front.png
+[   +4 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/player/player_left.png
+[   +7 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/player/player_right.png
+[   +5 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/player/walk_left.png
+[   +2 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/player/walk_right.png
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/tiles
+[   +4 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/tiles/parliament.png
+[   +9 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/tiles/tile_0004.png
+[   +4 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/tiles/tile_0009.png
+[   +2 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/tiles
+[   +5 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/tiles/CityObjects.tsx
+[   +2 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/tiles/generate_map.dart
+[   +2 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/tiles/generate_tiles.dart
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/assets/tiles/map.tmx
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/FontManifest.json
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/fonts
+[   +3 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/fonts/MaterialIcons-Regular.otf
+[  +12 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/kernel_blob.bin
+[ +343 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/NativeAssetsManifest.json
+[   +2 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/NOTICES.Z
+[   +2 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/shaders
+[   +2 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/shaders/ink_sparkle.frag
+[   +2 ms]   -- Installing: C:/Users/49172/Desktop/wodkania-game/Wodkania-Game/build/windows/x64/runner/Debug/data/flutter_assets/shaders/stretch_effect.frag
+[  +19 ms] FinalizeBuildStatus:
+[        ]   Deleting file "x64\Debug\INSTALL\INSTALL.tlog\unsuccessfulbuild".
+[        ]   Touching "x64\Debug\INSTALL\INSTALL.tlog\INSTALL.lastbuildstate".
+[        ] Done Building Project "C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\INSTALL.vcxproj" (default targets).
+[   +3 ms] Build succeeded.
+[        ]     0 Warning(s)
+[        ]     0 Error(s)
+[        ] Time Elapsed 00:00:19.60
+[  +42 ms] Building Windows application... (completed in 23,9s)
+[   +3 ms] √ Built build\windows\x64\runner\Debug\vodkania_game.exe
+[ +202 ms] VM Service URL on device: http://127.0.0.1:60512/0c_-IIif8GE=/
+[   +4 ms] Caching compiled dill
+[  +40 ms] Connecting to service protocol: http://127.0.0.1:60512/0c_-IIif8GE=/
+[ +163 ms] Launching a Dart Developer Service (DDS) instance at http://127.0.0.1:0, connecting to VM service at http://127.0.0.1:60512/0c_-IIif8GE=/.
+[ +402 ms] Successfully connected to service protocol: http://127.0.0.1:60512/0c_-IIif8GE=/
+[  +18 ms] DevFS: Creating new filesystem on the device (null)
+[  +88 ms] DevFS: Created new filesystem on the device (file:///C:/Users/49172/AppData/Local/Temp/Wodkania-Game7fad2d80/Wodkania-Game/)
+[   +5 ms] Updating assets
+[   +2 ms] runHooks() with {TargetFile: C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\lib\main.dart, BuildMode: debug} and TargetPlatform.windows_x64
+[        ] runHooks() - will perform dart build
+[   +2 ms] Initializing file store
+[   +3 ms] Done initializing file store
+[  +97 ms] Skipping target: dart_build
+[   +2 ms] Persisting file store
+[   +4 ms] Done persisting file store
+[   +8 ms] runHooks() - done
+[ +624 ms] Manifest contained wildcard assets. Inserting missing file into build graph to force rerun. for more information see #56466.
+[   +9 ms] Syncing files to device Windows...
+[   +6 ms] Compiling dart to kernel with 0 updated files
+[        ] Processing bundle.
+[   +1 ms] <- recompile package:vodkania_game/main.dart d99053d2-6843-43a9-a06d-2f0ac25dfbf0
+[        ] <- d99053d2-6843-43a9-a06d-2f0ac25dfbf0
+[  +71 ms] Bundle processing done.
+[  +10 ms] 🎯 Keyboard focus requested
+[   +4 ms] Player loaded. Size: [50.0,50.0]. Canvas Draw mode active.
+[   +8 ms] [ERROR:flutter/runtime/dart_vm_initializer.cc(40)] Unhandled Exception: Instance of 'ParsingException'
+[        ] #0      Parser.getIntOrNull (package:tiled/src/parser.dart:175:7)
+[        ] #1      new Tileset.parse (package:tiled/src/tileset/tileset.dart:119:30)
+[        ] #2      Tileset._checkIfExternalTsx (package:tiled/src/tileset/tileset.dart:176:31)
+[        ] #3      new Tileset.parse (package:tiled/src/tileset/tileset.dart:170:12)
+[        ] #4      new TiledMap.parse.<anonymous closure> (package:tiled/src/tiled_map.dart:352:24)
+[        ] #5      MappedListIterable.elementAt (dart:_internal/iterable.dart:442:31)
+[        ] #6      ListIterator.moveNext (dart:_internal/iterable.dart:371:26)
+[        ] #7      new _GrowableList._ofEfficientLengthIterable (dart:core-patch/growable_array.dart:194:27)
+[        ] #8      new _GrowableList.of (dart:core-patch/growable_array.dart:154:28)
+[        ] #9      new List.of (dart:core-patch/array_patch.dart:39:18)
+[        ] #10     ListIterable.toList (dart:_internal/iterable.dart:224:7)
+[        ] #11     Parser.getChildrenAs (package:tiled/src/parser.dart:98:42)
+[        ] #12     new TiledMap.parse (package:tiled/src/tiled_map.dart:341:29)
+[        ] #13     TileMapParser.parseTmx (package:tiled/src/tile_map_parser.dart:22:21)
+[        ] #14     TiledMap.fromString (package:tiled/src/tiled_map.dart:152:26)
+[        ] <asynchronous suspension>
+[        ] #15     RenderableTiledMap.fromString (package:flame_tiled/src/renderable_tile_map.dart:308:17)
+[        ] <asynchronous suspension>
+[        ] #16     TiledComponent.load (package:flame_tiled/src/tiled_component.dart:125:7)
+[        ] <asynchronous suspension>
+[        ] #17     VodkaniaMap.onLoad (package:vodkania_game/game/vodkania_map.dart:17:11)
+[        ] <asynchronous suspension>
+[        ] #18     Component._startLoading.<anonymous closure> (package:flame/src/components/core/component.dart:962:32)
+[        ] <asynchronous suspension>
+[ +124 ms] Updating files.
+[        ] Pending asset builds completed. Writing dirty entries.
+[        ] DevFS: Sync finished
+[        ] Syncing files to device Windows... (completed in 236ms)
+[        ] Synced 0.0MB.
+[   +1 ms] <- accept
+[   +3 ms] Connected to _flutterView/0x219bb9d86a0.
+[   +3 ms] Flutter run key commands.
+[   +1 ms] r Hot reload. 
+[        ] R Hot restart.
+[        ] h List all available interactive commands.
+[        ] d Detach (terminate "flutter run" but leave application running).
+[        ] c Clear the screen
+[        ] q Quit (terminate the application on the device).
+[        ] A Dart VM Service on Windows is available at: http://127.0.0.1:60518/LJI9fiYYPRM=/
+[   +1 ms] The Flutter DevTools debugger and profiler on Windows is available at: http://127.0.0.1:60518/LJI9fiYYPRM=/devtools/?uri=ws://127.0.0.1:60518/LJI9fiYYPRM=/ws
+[+13131 ms] Service protocol connection closed.
+[        ] Lost connection to device.
+[   +1 ms] DevFS: Deleting filesystem on the device (file:///C:/Users/49172/AppData/Local/Temp/Wodkania-Game7fad2d80/Wodkania-Game/)
+[        ] DevFS: Deleted filesystem on the device (file:///C:/Users/49172/AppData/Local/Temp/Wodkania-Game7fad2d80/Wodkania-Game/)
+[   +2 ms] "flutter run" took 40.320ms.
+[  +61 ms] Running 3 shutdown hooks
+[  +17 ms] Shutdown hooks complete
+[  +61 ms] exiting with code 0

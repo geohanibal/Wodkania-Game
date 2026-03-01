@@ -1,0 +1,46 @@
+Resolving dependencies...
+Downloading packages...
+  _fe_analyzer_shared 91.0.0 (96.0.0 available)
+  analyzer 8.4.1 (10.2.0 available)
+  characters 1.4.0 (1.4.1 available)
+  matcher 0.12.17 (0.12.18 available)
+  material_color_utilities 0.11.1 (0.13.0 available)
+  meta 1.17.0 (1.18.1 available)
+  test 1.26.3 (1.29.0 available)
+  test_api 0.7.7 (0.7.9 available)
+  test_core 0.6.12 (0.6.15 available)
+  very_good_analysis 10.1.0 (10.2.0 available)
+Got dependencies!
+10 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+Building Windows application...                                 
+lib/game/minimal_entities.dart(23,85): error G5FE39F1E: Type 'MinimalVodkaniaGame' not found. [C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\flutter\flutter_assemble.vcxproj]
+lib/game/minimal_entities.dart(83,55): error G5FE39F1E: Type 'MinimalVodkaniaGame' not found. [C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\flutter\flutter_assemble.vcxproj]
+lib/game/minimal_entities.dart(122,63): error G5FE39F1E: Type 'MinimalVodkaniaGame' not found. [C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\flutter\flutter_assemble.vcxproj]
+lib/game/minimal_entities.dart(202,61): error G5FE39F1E: Type 'MinimalVodkaniaGame' not found. [C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\flutter\flutter_assemble.vcxproj]
+lib/main.dart(29,16): error G4121A47C: The setter 'moveDirection' isn't defined for the type 'VodkaniaGame'. [C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\flutter\flutter_assemble.vcxproj]
+lib/game/entities/civilians/civilian_spawner.dart(42,14): error G4127D1E8: The getter 'GameConfig' isn't defined for the type 'CivilianSpawner'. [C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\flutter\flutter_assemble.vcxproj]
+lib/game/entities/civilians/civilian_spawner.dart(42,48): error G4127D1E8: The getter 'GameConfig' isn't defined for the type 'CivilianSpawner'. [C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\flutter\flutter_assemble.vcxproj]
+lib/game/entities/police/police_spawner.dart(41,14): error G4127D1E8: The getter 'GameConfig' isn't defined for the type 'PoliceSpawner'. [C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\flutter\flutter_assemble.vcxproj]
+lib/game/entities/police/police_spawner.dart(41,48): error G4127D1E8: The getter 'GameConfig' isn't defined for the type 'PoliceSpawner'. [C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\flutter\flutter_assemble.vcxproj]
+lib/game/entities/civilians/civilian_component.dart(87,23): error G75B77105: Member not found: 'civilianPanicRange'. [C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\flutter\flutter_assemble.vcxproj]
+lib/game/entities/civilians/civilian_component.dart(88,52): error G75B77105: Member not found: 'civilianPanicSpeed'. [C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\flutter\flutter_assemble.vcxproj]
+lib/game/entities/civilians/civilian_component.dart(83,23): error G4127D1E8: The getter 'game' isn't defined for the type 'CivilianComponent'. [C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\flutter\flutter_assemble.vcxproj]
+lib/game/entities/civilians/civilian_component.dart(92,40): error G4127D1E8: The getter 'GameConfig' isn't defined for the type 'CivilianComponent'. [C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\flutter\flutter_assemble.vcxproj]
+lib/game/entities/civilians/civilian_component.dart(92,31): error G44692867: A value of type 'num' can't be assigned to a variable of type 'double'. [C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\flutter\flutter_assemble.vcxproj]
+lib/game/entities/civilians/civilian_component.dart(93,40): error G4127D1E8: The getter 'GameConfig' isn't defined for the type 'CivilianComponent'. [C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\flutter\flutter_assemble.vcxproj]
+lib/game/entities/civilians/civilian_component.dart(93,31): error G44692867: A value of type 'num' can't be assigned to a variable of type 'double'. [C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\flutter\flutter_assemble.vcxproj]
+lib/game/entities/civilians/civilian_component.dart(112,38): error G4127D1E8: The getter 'GameConfig' isn't defined for the type 'CivilianComponent'. [C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\flutter\flutter_assemble.vcxproj]
+lib/game/entities/civilians/civilian_component.dart(112,29): error G44692867: A value of type 'num' can't be assigned to a variable of type 'double'. [C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\flutter\flutter_assemble.vcxproj]
+lib/game/entities/civilians/civilian_component.dart(113,38): error G4127D1E8: The getter 'GameConfig' isn't defined for the type 'CivilianComponent'. [C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\flutter\flutter_assemble.vcxproj]
+lib/game/entities/civilians/civilian_component.dart(113,29): error G44692867: A value of type 'num' can't be assigned to a variable of type 'double'. [C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\flutter\flutter_assemble.vcxproj]
+lib/game/entities/civilians/civilian_component.dart(151,49): error G4127D1E8: The getter 'GameConfig' isn't defined for the type 'CivilianComponent'. [C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\flutter\flutter_assemble.vcxproj]
+lib/game/entities/civilians/civilian_component.dart(151,39): error G44692867: A value of type 'num' can't be assigned to a variable of type 'double'. [C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\flutter\flutter_assemble.vcxproj]
+lib/game/entities/civilians/civilian_component.dart(152,49): error G4127D1E8: The getter 'GameConfig' isn't defined for the type 'CivilianComponent'. [C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\flutter\flutter_assemble.vcxproj]
+lib/game/entities/civilians/civilian_component.dart(152,39): error G44692867: A value of type 'num' can't be assigned to a variable of type 'double'. [C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\flutter\flutter_assemble.vcxproj]
+lib/game/minimal_entities.dart(164,35): error G602757EC: 'MinimalVodkaniaGame' isn't a type. [C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\flutter\flutter_assemble.vcxproj]
+lib/game/minimal_entities.dart(180,19): error G4020727C: Not a constant expression. [C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\flutter\flutter_assemble.vcxproj]
+lib/game/minimal_entities.dart(275,19): error G4020727C: Not a constant expression. [C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\flutter\flutter_assemble.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(254,5): error MSB8066: Custom build for 'C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\CMakeFiles\b9f6dfc37f75e65d2c4c72ab82e213b0\flutter_windows.dll.rule;C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\CMakeFiles\2c7d9f72dee414bb54f14f8a77caa3cf\flutter_assemble.rule' exited with code 1. [C:\Users\49172\Desktop\wodkania-game\Wodkania-Game\build\windows\x64\flutter\flutter_assemble.vcxproj]
+Building Windows application...                                    37,6s
+Build process failed.

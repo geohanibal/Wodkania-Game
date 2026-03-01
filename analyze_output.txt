@@ -1,0 +1,135 @@
+Resolving dependencies...
+Downloading packages...
+  _fe_analyzer_shared 91.0.0 (97.0.0 available)
+  analyzer 8.4.1 (11.0.0 available)
+  characters 1.4.0 (1.4.1 available)
+  matcher 0.12.17 (0.12.19 available)
+  material_color_utilities 0.11.1 (0.13.0 available)
+  meta 1.17.0 (1.18.1 available)
+  test 1.26.3 (1.30.0 available)
+  test_api 0.7.7 (0.7.10 available)
+  test_core 0.6.12 (0.6.16 available)
+  very_good_analysis 10.1.0 (10.2.0 available)
+Got dependencies!
+10 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+Analyzing Wodkania-Game...                                      
+
+   info - Missing a newline at the beginning of a multiline string - assets\tiles\generate_map.dart:63:7 - leading_newlines_in_multiline_strings
+   info - Don't invoke 'print' in production code - assets\tiles\generate_map.dart:79:3 - avoid_print
+   info - Don't invoke 'print' in production code - assets\tiles\generate_tiles.dart:22:3 - avoid_print
+   info - Missing a newline at the beginning of a multiline string - build\flutter_assets\assets\tiles\generate_map.dart:63:7 - leading_newlines_in_multiline_strings
+   info - Don't invoke 'print' in production code - build\flutter_assets\assets\tiles\generate_map.dart:79:3 - avoid_print
+   info - Don't invoke 'print' in production code - build\flutter_assets\assets\tiles\generate_tiles.dart:22:3 - avoid_print
+   info - Missing a newline at the beginning of a multiline string - build\windows\x64\runner\Debug\data\flutter_assets\assets\tiles\generate_map.dart:63:7 - leading_newlines_in_multiline_strings
+   info - Don't invoke 'print' in production code - build\windows\x64\runner\Debug\data\flutter_assets\assets\tiles\generate_map.dart:79:3 - avoid_print
+   info - Don't invoke 'print' in production code - build\windows\x64\runner\Debug\data\flutter_assets\assets\tiles\generate_tiles.dart:22:3 - avoid_print
+   info - Statements in an if should be enclosed in a block - generate_city.dart:86:9 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block - generate_city.dart:118:11 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block - generate_city.dart:120:11 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block - generate_city.dart:122:11 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block - generate_city.dart:124:11 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block - generate_city.dart:129:11 - curly_braces_in_flow_control_structures
+   info - Unnecessary duplication of receiver - generate_city.dart:167:5 - cascade_invocations
+   info - Unnecessary duplication of receiver - generate_city.dart:168:5 - cascade_invocations
+   info - Missing a newline at the beginning of a multiline string - generate_city.dart:195:7 - leading_newlines_in_multiline_strings
+   info - Don't invoke 'print' in production code - generate_city.dart:212:3 - avoid_print
+   info - Unnecessary duplication of receiver - inspect_assets.dart:25:5 - cascade_invocations
+   info - Unnecessary duplication of receiver - inspect_assets.dart:35:5 - cascade_invocations
+   info - Don't invoke 'print' in production code - inspect_assets.dart:49:3 - avoid_print
+   info - Place 'dart:' imports before other imports - lib\game\entities\effects\floating_text_component.dart:3:1 - directives_ordering
+   info - Unnecessary use of a 'double' literal - lib\game\entities\effects\floating_text_component.dart:11:23 - prefer_int_literals
+   info - Constructor declarations should be before non-constructor declarations - lib\game\entities\effects\floating_text_component.dart:14:3 - sort_constructors_first
+   info - Unnecessary use of a 'double' literal - lib\game\entities\effects\floating_text_component.dart:35:30 - prefer_int_literals
+   info - Unnecessary use of a 'double' literal - lib\game\entities\effects\floating_text_component.dart:43:23 - prefer_int_literals
+   info - Unnecessary duplication of receiver - lib\game\entities\effects\floating_text_component.dart:56:5 - cascade_invocations
+   info - Unnecessary duplication of receiver - lib\game\entities\effects\floating_text_component.dart:59:5 - cascade_invocations
+   info - Unnecessary type annotation on a local variable - lib\game\entities\npc\npc_component.dart:111:5 - omit_local_variable_types
+   info - Unnecessary use of a 'double' literal - lib\game\entities\npc\npc_component.dart:111:30 - prefer_int_literals
+   info - Unnecessary duplication of receiver - lib\game\entities\npc\npc_component.dart:123:5 - cascade_invocations
+   info - Use 'const' for final variables initialized to a constant value - lib\game\entities\npc\npc_component.dart:133:5 - prefer_const_declarations
+   info - Unnecessary duplication of receiver - lib\game\entities\npc\npc_component.dart:161:5 - cascade_invocations
+   info - Unnecessary duplication of receiver - lib\game\entities\npc\npc_component.dart:184:5 - cascade_invocations
+   info - Use the constant 'Offset.zero' rather than a constructor returning the same object - lib\game\entities\npc\npc_component.dart:195:15 - use_named_constants
+   info - Unnecessary duplication of receiver - lib\game\entities\npc\npc_component.dart:204:5 - cascade_invocations
+   info - Unnecessary duplication of receiver - lib\game\entities\npc\npc_component.dart:208:5 - cascade_invocations
+   info - Use the constant 'Offset.zero' rather than a constructor returning the same object - lib\game\entities\npc\npc_component.dart:216:27 - use_named_constants
+   info - Use the constant 'Offset.zero' rather than a constructor returning the same object - lib\game\entities\npc\npc_component.dart:221:27 - use_named_constants
+   info - Unnecessary duplication of receiver - lib\game\entities\player\player_component.dart:105:7 - cascade_invocations
+   info - Unnecessary duplication of receiver - lib\game\entities\player\player_component.dart:237:5 - cascade_invocations
+   info - Unnecessary use of a 'double' literal - lib\game\entities\player\player_component.dart:262:62 - prefer_int_literals
+   info - Unnecessary use of a 'double' literal - lib\game\entities\player\player_component.dart:278:63 - prefer_int_literals
+   info - Use 'isEven' rather than '% 2' - lib\game\entities\player\player_component.dart:298:30 - use_is_even_rather_than_modulo
+warning - The value of the local variable 'pantsPaint' isn't used - lib\game\entities\player\player_component.dart:304:11 - unused_local_variable
+   info - Unnecessary type annotation on a local variable - lib\game\entities\player\player_component.dart:314:5 - omit_local_variable_types
+   info - Unnecessary use of a 'double' literal - lib\game\entities\player\player_component.dart:314:28 - prefer_int_literals
+   info - Unnecessary type annotation on a local variable - lib\game\entities\player\player_component.dart:315:5 - omit_local_variable_types
+   info - Unnecessary use of a 'double' literal - lib\game\entities\player\player_component.dart:315:29 - prefer_int_literals
+   info - Unnecessary duplication of receiver - lib\game\entities\player\player_component.dart:334:5 - cascade_invocations
+   info - Unnecessary duplication of receiver - lib\game\entities\player\player_component.dart:342:5 - cascade_invocations
+   info - Unnecessary duplication of receiver - lib\game\entities\player\player_component.dart:348:5 - cascade_invocations
+   info - Unnecessary duplication of receiver - lib\game\entities\player\player_component.dart:353:5 - cascade_invocations
+   info - Use the constant 'Offset.zero' rather than a constructor returning the same object - lib\game\entities\player\player_component.dart:357:15 - use_named_constants
+   info - Unnecessary duplication of receiver - lib\game\entities\player\player_component.dart:366:5 - cascade_invocations
+   info - Unnecessary duplication of receiver - lib\game\entities\player\player_component.dart:371:5 - cascade_invocations
+   info - Unnecessary duplication of receiver - lib\game\entities\player\player_component.dart:382:5 - cascade_invocations
+   info - Unnecessary duplication of receiver - lib\game\systems\collision_system.dart:66:7 - cascade_invocations
+   info - 'Future'-returning calls in a non-'async' function - lib\game\systems\collision_system.dart:83:19 - discarded_futures
+   info - 'Future'-returning calls in a non-'async' function - lib\game\systems\collision_system.dart:90:20 - discarded_futures
+   info - Unnecessary duplication of receiver - lib\game\systems\collision_system.dart:115:5 - cascade_invocations
+   info - Unnecessary duplication of receiver - lib\game\systems\collision_system.dart:116:5 - cascade_invocations
+   info - 'Future'-returning calls in a non-'async' function - lib\game\systems\collision_system.dart:136:29 - discarded_futures
+warning - The value of the local variable 'runState' isn't used - lib\game\ui\game_over_overlay.dart:16:11 - unused_local_variable
+   info - Use a 'ColoredBox' rather than a 'Container' with only a 'Color' - lib\game\ui\game_over_overlay.dart:28:14 - use_colored_box
+   info - Unnecessary use of a 'double' literal - lib\game\ui\hud_overlay.dart:40:54 - prefer_int_literals
+   info - Unnecessary use of a 'double' literal - lib\game\ui\hud_overlay.dart:40:68 - prefer_int_literals
+   info - Unnecessary use of a 'double' literal - lib\game\ui\map_selection_overlay.dart:110:37 - prefer_int_literals
+   info - 'Future'-returning calls in a non-'async' function - lib\game\ui\map_selection_overlay.dart:252:17 - discarded_futures
+   info - Invalid assignment to the parameter 'angle' - lib\game\util\math.dart:52:7 - parameter_assignments
+   info - Invalid assignment to the parameter 'angle' - lib\game\util\math.dart:55:7 - parameter_assignments
+   info - The value of the argument is redundant because it matches the default value - lib\game\vodkania_game.dart:108:15 - avoid_redundant_argument_values
+   info - Unnecessary duplication of receiver - lib\game\vodkania_game.dart:179:5 - cascade_invocations
+   info - Unnecessary duplication of receiver - lib\game\vodkania_game.dart:180:5 - cascade_invocations
+   info - Unnecessary duplication of receiver - lib\game\vodkania_game.dart:189:5 - cascade_invocations
+   info - Unnecessary duplication of receiver - lib\game\vodkania_game.dart:190:5 - cascade_invocations
+   info - 'Future'-returning calls in a non-'async' function - lib\game\vodkania_game.dart:194:5 - discarded_futures
+   info - Unnecessary duplication of receiver - lib\game\world\camera_setup.dart:11:5 - cascade_invocations
+   info - Unnecessary duplication of receiver - lib\game\world\parliament_map_component.dart:32:5 - cascade_invocations
+   info - Invalid use of a private type in a public API - lib\game\world\parliament_map_component.dart:116:8 - library_private_types_in_public_api
+   info - Catch clause should use 'on' to specify the type of exception being caught - lib\game\world\parliament_map_component.dart:161:7 - avoid_catches_without_on_clauses
+   info - Catch clause should use 'on' to specify the type of exception being caught - lib\game\world\parliament_map_component.dart:197:9 - avoid_catches_without_on_clauses
+   info - Catch clause should use 'on' to specify the type of exception being caught - lib\game\world\parliament_map_component.dart:221:9 - avoid_catches_without_on_clauses
+   info - Catch clause should use 'on' to specify the type of exception being caught - lib\game\world\parliament_map_component.dart:248:9 - avoid_catches_without_on_clauses
+   info - Catch clause should use 'on' to specify the type of exception being caught - lib\game\world\parliament_map_component.dart:258:9 - avoid_catches_without_on_clauses
+   info - Catch clause should use 'on' to specify the type of exception being caught - lib\game\world\parliament_map_component.dart:268:9 - avoid_catches_without_on_clauses
+   info - Catch clause should use 'on' to specify the type of exception being caught - lib\game\world\parliament_map_component.dart:291:7 - avoid_catches_without_on_clauses
+   info - Unnecessary duplication of receiver - lib\game\world\world_builder.dart:46:5 - cascade_invocations
+   info - Unnecessary duplication of receiver - lib\game\world\world_builder.dart:55:5 - cascade_invocations
+   info - Unnecessary duplication of receiver - lib\game\world\world_builder.dart:64:5 - cascade_invocations
+   info - Unnecessary duplication of receiver - lib\game\world\world_builder.dart:73:5 - cascade_invocations
+   info - Unnecessary duplication of receiver - lib\game\world\world_builder.dart:132:5 - cascade_invocations
+   info - 'Future'-returning calls in a non-'async' function - lib\main.dart:20:18 - discarded_futures
+   info - 'Future'-returning calls in a non-'async' function - lib\main.dart:26:18 - discarded_futures
+warning - Unnecessary cast - lib\main.dart:44:37 - unnecessary_cast
+warning - The '!' will have no effect because the receiver can't be null - lib\main.dart:44:41 - unnecessary_non_null_assertion
+   info - Don't cast a nullable value to a non-nullable type - lib\main.dart:45:25 - cast_nullable_to_non_nullable
+   info - Unnecessary type annotation on a function expression parameter - test\widget_test.dart:14:49 - avoid_types_on_closure_parameters
+  error - The name 'MyApp' isn't a class - test\widget_test.dart:16:35 - creation_with_non_type
+   info - Don't invoke 'print' in production code - tools\game_tool.dart:4:3 - avoid_print
+   info - Don't invoke 'print' in production code - tools\sprite_generator.dart:6:3 - avoid_print
+   info - Unnecessary duplication of receiver - tools\sprite_generator.dart:11:3 - cascade_invocations
+   info - Unnecessary duplication of receiver - tools\sprite_generator.dart:12:3 - cascade_invocations
+   info - Unnecessary duplication of receiver - tools\sprite_generator.dart:13:3 - cascade_invocations
+   info - Don't invoke 'print' in production code - tools\sprite_generator.dart:15:3 - avoid_print
+   info - Don't invoke 'print' in production code - tools\sprite_generator.dart:16:3 - avoid_print
+   info - Unreachable member 'hairColor' in an executable library - tools\sprite_generator.dart:25:16 - unreachable_from_main
+   info - Don't invoke 'print' in production code - tools\sprite_generator.dart:44:5 - avoid_print
+   info - Don't invoke 'print' in production code - tools\sprite_generator.dart:59:5 - avoid_print
+   info - Don't invoke 'print' in production code - tools\sprite_generator.dart:74:5 - avoid_print
+   info - Use 'isEven' rather than '% 2' - tools\sprite_generator.dart:90:22 - use_is_even_rather_than_modulo
+   info - Use 'isEven' rather than '% 2' - tools\sprite_generator.dart:105:24 - use_is_even_rather_than_modulo
+   info - Unnecessary duplication of receiver - tools\world_sprite_pack_generator.dart:7:3 - cascade_invocations
+   info - Unreachable member 'black' in an executable library - tools\world_sprite_pack_generator.dart:598:20 - unreachable_from_main
+   info - Missing a newline at the beginning of a multiline string - update_real_city.dart:11:7 - leading_newlines_in_multiline_strings
+   info - Don't invoke 'print' in production code - update_real_city.dart:24:3 - avoid_print
+
