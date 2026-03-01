@@ -1,207 +1,59 @@
-# Vodkania Game
+# Wodkania Game (ვოდკანია)
 
-A 2D top-down action/survival crowd game set in the fictional state "Vodkania". Play as a rebel leader fleeing police while recruiting civilians to grow your supporter base!
+## 🎮 თამაშის აღწერა (Game Overview)
 
-## 🎮 Game Overview
+**Wodkania** არის მობილურზე ორიენტირებული (Mobile-First) 2D Top-Down მოქმედებითი თამაში, რომელიც აგებულია Flutter-სა და Flame Engine-ზე.
+თამაშის მთავარი მიზანია NPC-ების (მხარდამჭერების) შეგროვება, რუკაზე ნავიგაცია და მოწინააღმდეგე AI მოთამაშეებთან კონკურენცია.
+მოთამაშე (Player) და ხელოვნური ინტელექტით (AI) მართული სხვადასხვა ბოტები ერთმანეთს ეჯიბრებიან იმაში, თუ ვინ შეაგროვებს უფრო მეტ მხარდამჭერს.
 
-**Vodkania** is a mobile-first survival game where you:
-- Control a rebel leader escaping from police
-- Recruit civilians to build your crowd of supporters
-- Compete with rival factions for supporters
-- Collect equipment to boost your power
-- Survive as long as possible while difficulty escalates
+## 🎯 ძირითადი მექანიკები (Core Mechanics)
 
-## 🎯 Core Gameplay
+1. **მობილური კონტროლი (Mobile Priority)**: ეკრანზე მულტი-თაჩით (Joystick ან Touch) პერსონაჟის მართვა. თამაში პირველ რიგში გათვლილია ტელეფონების ეკრანებზე და შესაბამისად Лანდშაფტის (Landscape) რეჟიმზე.
+2. **AI არქეტიპები**: თამაშში არის სხვადასხვა პატერნით მოქმედი ბოტები:
+   - _Collector_ (კოლექტორი): ეძებს და აგროვებს უახლოეს თავისუფალ NPC-ებს.
+   - _Opportunist_ (ოპორტუნისტი): ნადირობს მხოლოდ იშვიათ და მაღალქულიან (Rare/Legendary) NPC-ებზე მთელ რუკაზე.
+   - _Aggressive_ (აგრესიული): თავს ესხმის სხვა მოთამაშეებს, რომლებსაც მასზე ნაკლები NPC ჰყავთ და ართმევს (Steal) მათ უკვე შეგროვებულ მხარდამჭერებს.
+3. **შეჯახება და NPC-ების მოპარვა**: როდესაც ორი მოთამაშე (Player vs AI ან AI vs AI) ერთმანეთს ეჯახება, ხდება ქულების ანგარიშწორება. კონკრეტულ შემთხვევაში ხდება მხარდამჭერების მოპარვის მექანიკის გააქტიურება და Invulnerability (მოუწყვლადობის) Cooldown-ის ჩართვა.
+4. **ვიზუალური ეფექტები**: პერსონაჟები (მოთამაშე და NPC) იხატება Canvas Draw მეთოდით მათემატიკურად — ჩრდილები, მბზინავი აურა (Player-ისთვის) და ფეხების მოძრაობის მიმიკა სიჩქარის მიხედვით, სპრაიტების (Sprites) გამოყენების გარეშე.
+5. **UI / HUD**: თამაშს აქვს HUD ეკრანი, სადაც ჩანს პროგრესი (Progress Bar), ლიდერთა დაფა (Leaderboard), მოთამაშეთა ფერები და ნომრები. UI მორგებულია მცირე ზომის (მობილურის) ეკრანებზე.
 
-- **Player Power** = Supporters + Equipment Bonuses
-- **Recruit Civilians**: Collect yellow civilians to grow your crowd
-- **Faction Battles**: When you collide with rival factions, the stronger side steals supporters
-- **Police Pursuit**: Police chase you - get captured with <10 supporters = Game Over
-- **Equipment**: Collect gas masks and goggles for power boosts
-- **Difficulty Scaling**: Police get faster and spawn more frequently over time
+## ✅ რა გაკეთდა აქამდე (Completed Features)
 
-## 🏗️ Tech Stack
+- **Core Game Loop**: თამაშის ძრავის წამოწყება (`VodkaniaGame`), State Management (`GameState`) და რუკების სისტემის ინტეგრაცია.
+- **Tiled Map გენერაცია**: პითონისა და Dart სკრიპტებით შეიქმნა ქალაქის პროცედურული რუკა. გასწორდა `map.tmx` და string interpolation პრობლემები. რუკები და Boundaries (საზღვრები) წარმატებით იხატება.
+- **Collision System**: მოთამაშეების და NPC-ების შეჯახების, მიზიდულობის და მოპარვის ლოგიკა.
+- **AI ლოგიკა**: დაემატა 3 განსხვავებული AI არქეტიპი და მათთვის შესაბამისი გადაწყვეტილების მიღების ლოგიკა.
+- **HUD / UI ოპტიმიზაცია მობილურისთვის**: მენიუს (Main Menu), აგრეთვე Pause და Game Over ეკრანების აწყობა. HUD ზომების (Padding, FontSize) განახევრება და სკალირება, რომ მობილურის ეკრანზე ბევრი ადგილი არ დაეკავებინა.
+- **Android Build შესწორებები**: Android Gradle Build-ის შეცდომების (დაფიქსირდა `build_error.txt`, `crash.log`) გამოსწორება, რაც ხელს უშლიდა აპლიკაციის ემულატორზე და მოწყობილობაზე გაშვებას.
 
-- **Flutter** (latest stable)
-- **Flame** game engine (1.18.0)
-- **Dart 3**
-- **very_good_analysis** for strict linting
+## 🚀 რა უნდა გაკეთდეს კიდევ (To-Do / Roadmap)
 
-## 📁 Project Structure
+მობილური პრიორიტეტის და სამომავლო განვითარების გათვალისწინებით გასაკეთებელია:
 
-```
-lib/
-  ├── main.dart
-  ├── app/
-  │   └── game_app.dart
-  └── game/
-      ├── vodkania_game.dart
-      ├── config/              # Game configuration & tuning
-      ├── state/               # Game state management
-      ├── input/               # Mobile joystick controls
-      ├── world/               # World building & camera
-      ├── systems/             # Core game systems (collision, spawn, difficulty)
-      ├── entities/            # Game entities (player, police, factions, items)
-      ├── mechanics/           # Game mechanics (crowd rules, equipment, combat)
-      ├── ui/                  # UI overlays (HUD, pause, game over)
-      └── util/                # Utilities (math, timers, object pool)
-```
+- [ ] **მობილური მართვის (Joystick/On-Screen Touch)** საბოლოო დახვეწა და ეკრანზე ვირტუალური ჯოისტიკის UI დამატება (Virtual Joystick Component), რომ მოთამაშისთვის ბევრად მარტივი იყოს навігація.
+- [ ] **რუკის კოლიზიები და სრიალი (Sliding)**: შენობებთან ან დაბრკოლებებთან შეჯახებისას გაჭედვის მაგივრად კედელზე სრიალის ლოგიკის დამატება.
+- [ ] **შესრულების (Performance) ოპტიმიზაცია**: 200+ NPC-ის ერთდროული render-ის და განახლების დროს მობილურ მოწყობილობებზე FPS-ის შენარჩუნება (მაგალითად: Spatial Hash Grid-დოლარიანი კოლიზიებისთვის).
+- [ ] **Audio-Visual Effects**: თამაშში ხმების (BGM, SFX შეგროვებაზე/მოპარვაზე) ფონური ინტეგრაცია.
+- [ ] **გაფართოებული UI მობილურისთვის**: ტელეფონის "Safe Area"-ს (Notch/Camera cutout) გათვალისწინება ყველა Overlay ეკრანისთვის.
+- [ ] **დოკუმენტაციის / ფაილების გასუფთავება**: სატესტო `.txt`, დებაგისა და ლოგების ნარჩენი ფაილების წაშლა ძირითადი ფოლდერიდან (Clean up).
 
-## 🚀 Getting Started
+## 🏗️ ტექნოლოგიური სტეკი (Tech Stack)
 
-### Prerequisites
+- **Flutter** (Dart 3)
+- **Flame Engine**
 
-- Flutter SDK (3.24.0 or later)
-- Dart SDK (3.0.0 or later)
+## 📱 როგორ გავუშვათ (How to Run)
 
-### Installation
+ვინაიდან თამაში პრიორიტეტულად არის **Android / iOS**-სთვის:
 
 ```bash
-# Get dependencies
+# პაკეტების ჩამოტვირთვა
 flutter pub get
 
-# Run the game
-flutter run
-
-# For mobile device
+# ემულატორზე ან რეალურ მოწყობილობაზე გაშვება
 flutter run -d <device-id>
 ```
 
-### Build
-
-```bash
-# Android APK
-flutter build apk --release
-
-# Web (optional, mobile is priority)
-flutter build web
-```
-
-## 🧪 Testing
-
-```bash
-# Run all tests
-flutter test
-
-# Run specific test
-flutter test test/crowd_rules_test.dart
-
-# Format code
-dart format .
-
-# Analyze code
-flutter analyze
-```
-
-## 🎨 Game Controls
-
-**Mobile:**
-- **Joystick** (bottom-left): Move your character
-- Touch and drag to control direction
-
-**Desktop (for testing):**
-- Currently optimized for mobile, keyboard controls can be added if needed
-
-## ⚙️ Configuration & Tuning
-
-All gameplay parameters can be adjusted in [`lib/game/config/tuning.dart`](lib/game/config/tuning.dart):
-
-- Player speed, starting supporters
-- Civilian spawn rates and behavior
-- Faction AI parameters
-- Police detection radius, chase speed
-- Equipment bonuses
-- Difficulty scaling rates
-
-## 🏆 Game Mechanics
-
-### Crowd Rules
-- Supporters transfer between entities based on power difference
-- Transfer amount: ~20% of power difference (clamped 1-10)
-- Can't transfer more than the loser has
-
-### Police Mechanics
-- Detection radius: 200 units
-- Capture with <10 supporters: Game Over
-- Capture with ≥10 supporters: Lose 5 supporters (penalty)
-
-### Difficulty Escalation
-- Every 60 seconds: difficulty level increases
-- Police speed increases by 10/level
-- Police spawn interval decreases by 2s/level (min 10s)
-
-## 📊 Performance
-
-**Target:** 60 FPS on mid-range Android devices
-
-**Optimizations:**
-- Object pooling for frequent spawns
-- Efficient collision detection
-- Minimal UI updates
-- Clean component lifecycle management
-
-## 🔧 CI/CD
-
-GitHub Actions workflow runs on every push:
-1. Format check
-2. Static analysis
-3. Run tests
-4. Build APK
-
-See [`.github/workflows/ci.yml`](.github/workflows/ci.yml)
-
-## 🎭 Entity Colors
-
-- **Player**: Blue
-- **Civilians**: Yellow
-- **Factions**: Pink, Purple, Cyan
-- **Police**: Red
-- **Items**: Green
-
-## 📝 License
-
-This project is for educational/demo purposes.
-
-## 🤝 Contributing
-
-1. Follow the existing code structure
-2. Add tests for new mechanics
-3. Keep mobile performance in mind
-4. Use `very_good_analysis` linting rules
-
-## 📱 Platform Support
-
-- ✅ **Android** (primary target)
-- ✅ **iOS** (supported)
-- ⚠️ **Web** (works but mobile UX is priority)
-- ⚠️ **Desktop** (not optimized)
-
-## 🎯 Development Roadmap
-
-- [x] Core gameplay loop
-- [x] Mobile controls
-- [x] Collision & combat system
-- [x] Difficulty scaling
-- [x] UI overlays
-- [ ] Sound effects & music
-- [ ] Persistent high scores
-- [ ] Power-ups & abilities
-- [ ] Multiple maps/environments
-- [ ] Tutorial mode
-
-## 🐛 Known Issues
-
-- Police AI can occasionally path inefficiently
-- Web build may have touch input lag on some devices
-
-## 💡 Tips for Playing
-
-1. **Recruit early**: Build your crowd before police show up
-2. **Avoid strong factions**: Check their size before engaging
-3. **Collect equipment**: Every bonus counts in encounters
-4. **Keep moving**: Don't let police corner you
-5. **Strategic retreats**: Sometimes running is better than fighting
-
 ---
 
-Built with ❤️ using Flutter & Flame 
+_დოკუმენტაცია განახლებულია პროექტის ბოლო ცვლილებების შესაბამისად და ასახავს მობილური ვერსიის პრიორიტეტულობას._

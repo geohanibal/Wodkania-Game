@@ -31,13 +31,12 @@ class PauseOverlay extends StatelessWidget {
             ElevatedButton(
               onPressed: onResume,
               style: ElevatedButton.styleFrom(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 48, vertical: 16),
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 48,
+                  vertical: 16,
+                ),
               ),
-              child: const Text(
-                'Resume',
-                style: TextStyle(fontSize: 24),
-              ),
+              child: const Text('Resume', style: TextStyle(fontSize: 24)),
             ),
           ],
         ),

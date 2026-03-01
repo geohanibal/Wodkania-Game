@@ -12,10 +12,12 @@ class PhotoMap extends PositionComponent {
   @override
   Future<void> onLoad() async {
     final sprite = await Sprite.load(assetPath);
-    add(SpriteComponent(
-      sprite: sprite,
-      size: Vector2(GameConfig.worldWidth, GameConfig.worldHeight),
-    ),);
+    add(
+      SpriteComponent(
+        sprite: sprite,
+        size: Vector2(GameConfig.worldWidth, GameConfig.worldHeight),
+      ),
+    );
   }
 }
 
@@ -31,7 +33,7 @@ class WorldBuilder {
         if (GameState.instance.isTiledMap)
           VodkaniaMap(mapPath: GameState.instance.selectedMap)
         else
-          PhotoMap(assetPath: GameState.instance.selectedMap), 
+          PhotoMap(assetPath: GameState.instance.selectedMap),
       ],
     );
   }
@@ -85,12 +87,9 @@ class GridComponent extends Component {
   @override
   void render(Canvas canvas) {
     final gridPaint = Paint()
-      ..color = const Color(0xFF2E7D32).withValues(
-        red: 46,
-        green: 125,
-        blue: 50,
-        alpha: 0.4 * 255,
-      )
+      ..color = const Color(
+        0xFF2E7D32,
+      ).withValues(red: 46, green: 125, blue: 50, alpha: 0.4 * 255)
       ..strokeWidth = 2
       ..style = PaintingStyle.stroke;
 

@@ -9,7 +9,7 @@ enum VehicleDirection {
   south,
   southWest,
   west,
-  northWest
+  northWest,
 }
 
 /// Helper to convert direction enum to suffix
@@ -41,8 +41,7 @@ Future<Sprite> loadVehicleSprite({
   required VehicleDirection direction,
 }) async {
   final suffix = directionToSuffix(direction);
-  final path =
-      'vehicles/PNG/$vehicleType/${baseName}_$suffix.png';
+  final path = 'vehicles/PNG/$vehicleType/${baseName}_$suffix.png';
   return Sprite.load(path);
 }
 

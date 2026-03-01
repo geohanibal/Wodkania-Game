@@ -11,10 +11,12 @@ class WorldSpritePackGenerator {
   static const int tile = 64;
 
   final Directory outDir = Directory('assets/images/generated_sprite_pack');
-  final Directory objectsDir =
-      Directory('assets/images/generated_sprite_pack/objects');
-  final Directory charactersDir =
-      Directory('assets/images/generated_sprite_pack/characters');
+  final Directory objectsDir = Directory(
+    'assets/images/generated_sprite_pack/objects',
+  );
+  final Directory charactersDir = Directory(
+    'assets/images/generated_sprite_pack/characters',
+  );
 
   final List<_SpriteMeta> _sprites = <_SpriteMeta>[];
 
@@ -32,53 +34,110 @@ class WorldSpritePackGenerator {
       _SpriteEntry('car_van_side', 'objects', _drawVanSide),
       _SpriteEntry('car_ambulance_top', 'objects', _drawAmbulanceTop),
       _SpriteEntry(
-          'sidewalk_straight_top', 'objects', _drawSidewalkStraightTop,),
+        'sidewalk_straight_top',
+        'objects',
+        _drawSidewalkStraightTop,
+      ),
       _SpriteEntry('sidewalk_corner_top', 'objects', _drawSidewalkCornerTop),
       _SpriteEntry('crosswalk_top', 'objects', _drawCrosswalkTop),
       _SpriteEntry('road_straight_top', 'objects', _drawRoadStraightTop),
       _SpriteEntry(
-          'building_apartment_top', 'objects', _drawBuildingApartmentTop,),
+        'building_apartment_top',
+        'objects',
+        _drawBuildingApartmentTop,
+      ),
       _SpriteEntry(
-          'building_apartment_side', 'objects', _drawBuildingApartmentSide,),
+        'building_apartment_side',
+        'objects',
+        _drawBuildingApartmentSide,
+      ),
       _SpriteEntry('building_office_top', 'objects', _drawBuildingOfficeTop),
-      _SpriteEntry('building_police_station_top', 'objects',
-          _drawBuildingPoliceStationTop,),
+      _SpriteEntry(
+        'building_police_station_top',
+        'objects',
+        _drawBuildingPoliceStationTop,
+      ),
       _SpriteEntry('bench_top', 'objects', _drawBenchTop),
       _SpriteEntry('bus_stop_top', 'objects', _drawBusStopTop),
       _SpriteEntry('barricade_top', 'objects', _drawBarricadeTop),
       _SpriteEntry('street_lamp_top', 'objects', _drawStreetLampTop),
       _SpriteEntry('traffic_cone_top', 'objects', _drawTrafficConeTop),
       _SpriteEntry('trash_bin_top', 'objects', _drawTrashBinTop),
-      _SpriteEntry('civilian_front', 'characters',
-          (i) => _drawPerson(i, PersonKind.civilian, View.front),),
-      _SpriteEntry('civilian_left', 'characters',
-          (i) => _drawPerson(i, PersonKind.civilian, View.left),),
-      _SpriteEntry('civilian_right', 'characters',
-          (i) => _drawPerson(i, PersonKind.civilian, View.right),),
-      _SpriteEntry('civilian_back', 'characters',
-          (i) => _drawPerson(i, PersonKind.civilian, View.back),),
-      _SpriteEntry('civilian_top', 'characters',
-          (i) => _drawPerson(i, PersonKind.civilian, View.top),),
-      _SpriteEntry('police_front', 'characters',
-          (i) => _drawPerson(i, PersonKind.police, View.front),),
-      _SpriteEntry('police_left', 'characters',
-          (i) => _drawPerson(i, PersonKind.police, View.left),),
-      _SpriteEntry('police_right', 'characters',
-          (i) => _drawPerson(i, PersonKind.police, View.right),),
-      _SpriteEntry('police_back', 'characters',
-          (i) => _drawPerson(i, PersonKind.police, View.back),),
-      _SpriteEntry('police_top', 'characters',
-          (i) => _drawPerson(i, PersonKind.police, View.top),),
-      _SpriteEntry('swat_front', 'characters',
-          (i) => _drawPerson(i, PersonKind.swat, View.front),),
-      _SpriteEntry('swat_left', 'characters',
-          (i) => _drawPerson(i, PersonKind.swat, View.left),),
-      _SpriteEntry('swat_right', 'characters',
-          (i) => _drawPerson(i, PersonKind.swat, View.right),),
-      _SpriteEntry('swat_back', 'characters',
-          (i) => _drawPerson(i, PersonKind.swat, View.back),),
-      _SpriteEntry('swat_top', 'characters',
-          (i) => _drawPerson(i, PersonKind.swat, View.top),),
+      _SpriteEntry(
+        'civilian_front',
+        'characters',
+        (i) => _drawPerson(i, PersonKind.civilian, View.front),
+      ),
+      _SpriteEntry(
+        'civilian_left',
+        'characters',
+        (i) => _drawPerson(i, PersonKind.civilian, View.left),
+      ),
+      _SpriteEntry(
+        'civilian_right',
+        'characters',
+        (i) => _drawPerson(i, PersonKind.civilian, View.right),
+      ),
+      _SpriteEntry(
+        'civilian_back',
+        'characters',
+        (i) => _drawPerson(i, PersonKind.civilian, View.back),
+      ),
+      _SpriteEntry(
+        'civilian_top',
+        'characters',
+        (i) => _drawPerson(i, PersonKind.civilian, View.top),
+      ),
+      _SpriteEntry(
+        'police_front',
+        'characters',
+        (i) => _drawPerson(i, PersonKind.police, View.front),
+      ),
+      _SpriteEntry(
+        'police_left',
+        'characters',
+        (i) => _drawPerson(i, PersonKind.police, View.left),
+      ),
+      _SpriteEntry(
+        'police_right',
+        'characters',
+        (i) => _drawPerson(i, PersonKind.police, View.right),
+      ),
+      _SpriteEntry(
+        'police_back',
+        'characters',
+        (i) => _drawPerson(i, PersonKind.police, View.back),
+      ),
+      _SpriteEntry(
+        'police_top',
+        'characters',
+        (i) => _drawPerson(i, PersonKind.police, View.top),
+      ),
+      _SpriteEntry(
+        'swat_front',
+        'characters',
+        (i) => _drawPerson(i, PersonKind.swat, View.front),
+      ),
+      _SpriteEntry(
+        'swat_left',
+        'characters',
+        (i) => _drawPerson(i, PersonKind.swat, View.left),
+      ),
+      _SpriteEntry(
+        'swat_right',
+        'characters',
+        (i) => _drawPerson(i, PersonKind.swat, View.right),
+      ),
+      _SpriteEntry(
+        'swat_back',
+        'characters',
+        (i) => _drawPerson(i, PersonKind.swat, View.back),
+      ),
+      _SpriteEntry(
+        'swat_top',
+        'characters',
+        (i) => _drawPerson(i, PersonKind.swat, View.top),
+      ),
     ];
 
     for (final entry in entries) {
@@ -88,8 +147,9 @@ class WorldSpritePackGenerator {
           ? 'assets/images/generated_sprite_pack/objects/${entry.name}.png'
           : 'assets/images/generated_sprite_pack/characters/${entry.name}.png';
       File(filePath).writeAsBytesSync(img.encodePng(image));
-      _sprites
-          .add(_SpriteMeta(name: entry.name, kind: entry.kind, file: filePath));
+      _sprites.add(
+        _SpriteMeta(name: entry.name, kind: entry.kind, file: filePath),
+      );
     }
 
     _writeSpriteSheet();
@@ -109,8 +169,11 @@ class WorldSpritePackGenerator {
   void _writeSpriteSheet() {
     const columns = 8;
     final rows = (_sprites.length / columns).ceil();
-    final sheet =
-        img.Image(width: columns * tile, height: rows * tile, numChannels: 4);
+    final sheet = img.Image(
+      width: columns * tile,
+      height: rows * tile,
+      numChannels: 4,
+    );
 
     final frames = <String, Map<String, int>>{};
 
@@ -128,11 +191,12 @@ class WorldSpritePackGenerator {
       _sprites[i] = _sprites[i].copyWith(x: x, y: y, w: tile, h: tile);
     }
 
-    File('${outDir.path}/all_spritesheet.png')
-        .writeAsBytesSync(img.encodePng(sheet));
-    File('${outDir.path}/all_spritesheet.frames.json').writeAsStringSync(
-      const JsonEncoder.withIndent('  ').convert(frames),
-    );
+    File(
+      '${outDir.path}/all_spritesheet.png',
+    ).writeAsBytesSync(img.encodePng(sheet));
+    File(
+      '${outDir.path}/all_spritesheet.frames.json',
+    ).writeAsStringSync(const JsonEncoder.withIndent('  ').convert(frames));
   }
 
   void _writeManifest() {
@@ -141,20 +205,22 @@ class WorldSpritePackGenerator {
       'count': _sprites.length,
       'root': outDir.path.replaceAll(r'\', '/'),
       'files': _sprites
-          .map((s) => <String, dynamic>{
-                'name': s.name,
-                'kind': s.kind,
-                'file': s.file.replaceAll(r'\', '/'),
-                'sheet': <String, int>{'x': s.x, 'y': s.y, 'w': s.w, 'h': s.h},
-              },)
+          .map(
+            (s) => <String, dynamic>{
+              'name': s.name,
+              'kind': s.kind,
+              'file': s.file.replaceAll(r'\', '/'),
+              'sheet': <String, int>{'x': s.x, 'y': s.y, 'w': s.w, 'h': s.h},
+            },
+          )
           .toList(),
       'for_copilot':
           'Use all_spritesheet.png + all_spritesheet.frames.json for atlas lookups, or individual PNGs by file name.',
     };
 
-    File('${outDir.path}/manifest.json').writeAsStringSync(
-      const JsonEncoder.withIndent('  ').convert(manifest),
-    );
+    File(
+      '${outDir.path}/manifest.json',
+    ).writeAsStringSync(const JsonEncoder.withIndent('  ').convert(manifest));
   }
 
   void _drawTreeOakTop(img.Image i) {
@@ -341,26 +407,26 @@ class WorldSpritePackGenerator {
   void _drawPerson(img.Image i, PersonKind kind, View view) {
     final p = switch (kind) {
       PersonKind.civilian => const _PersonPalette(
-          head: C.skin,
-          body: C.civilianBody,
-          legs: C.civilianLegs,
-          accent: C.civilianAccent,
-          helmet: C.civilianHair,
-        ),
+        head: C.skin,
+        body: C.civilianBody,
+        legs: C.civilianLegs,
+        accent: C.civilianAccent,
+        helmet: C.civilianHair,
+      ),
       PersonKind.police => const _PersonPalette(
-          head: C.skin,
-          body: C.policeBody,
-          legs: C.policeLegs,
-          accent: C.policeAccent,
-          helmet: C.policeCap,
-        ),
+        head: C.skin,
+        body: C.policeBody,
+        legs: C.policeLegs,
+        accent: C.policeAccent,
+        helmet: C.policeCap,
+      ),
       PersonKind.swat => const _PersonPalette(
-          head: C.skinDark,
-          body: C.swatBody,
-          legs: C.swatLegs,
-          accent: C.swatAccent,
-          helmet: C.swatHelmet,
-        ),
+        head: C.skinDark,
+        body: C.swatBody,
+        legs: C.swatLegs,
+        accent: C.swatAccent,
+        helmet: C.swatHelmet,
+      ),
     };
 
     switch (view) {
@@ -394,7 +460,11 @@ class WorldSpritePackGenerator {
   }
 
   void _drawPersonSide(
-      img.Image i, _PersonPalette p, PersonKind kind, bool left,) {
+    img.Image i,
+    _PersonPalette p,
+    PersonKind kind,
+    bool left,
+  ) {
     final faceX = left ? 29 : 35;
     _circle(i, 32, 16, 8, p.head);
     _rect(i, 26, 22, 12, 4, p.helmet);
@@ -452,7 +522,13 @@ class WorldSpritePackGenerator {
   void _set(img.Image i, int x, int y, int c) {
     if (x < 0 || y < 0 || x >= i.width || y >= i.height) return;
     i.setPixelRgba(
-        x, y, (c >> 16) & 0xFF, (c >> 8) & 0xFF, c & 0xFF, (c >> 24) & 0xFF,);
+      x,
+      y,
+      (c >> 16) & 0xFF,
+      (c >> 8) & 0xFF,
+      c & 0xFF,
+      (c >> 24) & 0xFF,
+    );
   }
 
   void _rect(img.Image i, int x, int y, int w, int h, int c) {
@@ -644,16 +720,6 @@ class _PersonPalette {
   final int helmet;
 }
 
-enum PersonKind {
-  civilian,
-  police,
-  swat,
-}
+enum PersonKind { civilian, police, swat }
 
-enum View {
-  front,
-  left,
-  right,
-  back,
-  top,
-}
+enum View { front, left, right, back, top }

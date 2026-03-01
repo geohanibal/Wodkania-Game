@@ -5,12 +5,10 @@ import 'package:vodkania_game/game/vodkania_game.dart';
 
 // Asset path validation helper
 bool looksWrong(String p) =>
-  p.contains('assets/images/assets/images') ||
-  p.contains('//');
+    p.contains('assets/images/assets/images') || p.contains('//');
 
 /// Parliament area map with dynamic AI obstacles
 class ParliamentMapComponent extends PositionComponent {
-
   ParliamentMapComponent({this.gameRef});
   VodkaniaGame? gameRef;
 
@@ -33,8 +31,9 @@ class ParliamentMapComponent extends PositionComponent {
     );
     textPainter.layout();
     canvas.drawRect(
-        Rect.fromLTWH(10, 10, textPainter.width + 16, textPainter.height + 16),
-        paint,);
+      Rect.fromLTWH(10, 10, textPainter.width + 16, textPainter.height + 16),
+      paint,
+    );
     textPainter.paint(canvas, const Offset(18, 18));
   }
 
@@ -118,12 +117,15 @@ class ParliamentMapComponent extends PositionComponent {
 
   // Utility: check collision with building obstacles
   bool isPlayerCollidingWithBuilding(
-      Vector2 playerPosition, double playerRadius,) {
+    Vector2 playerPosition,
+    double playerRadius,
+  ) {
     for (final obstacle in _buildingObstacles) {
       final buildingRect = obstacle.rect;
       final playerRect = Rect.fromCircle(
-          center: Offset(playerPosition.x, playerPosition.y),
-          radius: playerRadius,);
+        center: Offset(playerPosition.x, playerPosition.y),
+        radius: playerRadius,
+      );
       if (buildingRect.overlaps(playerRect)) {
         return true;
       }
@@ -139,12 +141,21 @@ class ParliamentMapComponent extends PositionComponent {
     try {
       final parliamentPath = assetRegistry[parliamentSpriteKey]!;
       debugPrint('LOAD: $parliamentPath');
-      assert(!looksWrong(parliamentPath), 'Asset path looks wrong: $parliamentPath');
+      assert(
+        !looksWrong(parliamentPath),
+        'Asset path looks wrong: $parliamentPath',
+      );
       final sprite = await Sprite.load(parliamentPath);
       final parliament = SpriteComponent()
         ..sprite = sprite
-        ..size = Vector2(GameConfig.worldWidth * 0.2, GameConfig.worldHeight * 0.15)
-        ..position = Vector2(GameConfig.worldWidth * 0.4, GameConfig.worldHeight * 0.2);
+        ..size = Vector2(
+          GameConfig.worldWidth * 0.2,
+          GameConfig.worldHeight * 0.15,
+        )
+        ..position = Vector2(
+          GameConfig.worldWidth * 0.4,
+          GameConfig.worldHeight * 0.2,
+        );
       _tiles.add(parliament);
       await add(parliament);
     } catch (e) {
@@ -158,11 +169,17 @@ class ParliamentMapComponent extends PositionComponent {
         final key = 'building${(i % 5) + 1}';
         final buildingPath = assetRegistry[key]!;
         debugPrint('LOAD: $buildingPath');
-        assert(!looksWrong(buildingPath), 'Asset path looks wrong: $buildingPath');
+        assert(
+          !looksWrong(buildingPath),
+          'Asset path looks wrong: $buildingPath',
+        );
         final sprite = await Sprite.load(buildingPath);
         final comp = SpriteComponent()
           ..sprite = sprite
-          ..size = Vector2(GameConfig.worldWidth * 0.08, GameConfig.worldHeight * 0.09)
+          ..size = Vector2(
+            GameConfig.worldWidth * 0.08,
+            GameConfig.worldHeight * 0.09,
+          )
           ..position = Vector2(
             GameConfig.worldWidth * (0.15 + 0.15 * (i % 5)),
             GameConfig.worldHeight * (0.1 + 0.18 * (i ~/ 5)),
@@ -191,8 +208,14 @@ class ParliamentMapComponent extends PositionComponent {
         final sprite = await Sprite.load(roadPath);
         final comp = SpriteComponent()
           ..sprite = sprite
-          ..size = Vector2(GameConfig.worldWidth * 0.1, GameConfig.worldHeight * 0.05)
-          ..position = Vector2(GameConfig.worldWidth * (0.15 + 0.15 * i), GameConfig.worldHeight * 0.5);
+          ..size = Vector2(
+            GameConfig.worldWidth * 0.1,
+            GameConfig.worldHeight * 0.05,
+          )
+          ..position = Vector2(
+            GameConfig.worldWidth * (0.15 + 0.15 * i),
+            GameConfig.worldHeight * 0.5,
+          );
         _roads.add(comp);
         await add(comp);
       } catch (e) {
@@ -205,12 +228,21 @@ class ParliamentMapComponent extends PositionComponent {
       try {
         final sidewalkPath = assetRegistry[sidewalkSpriteKey]!;
         debugPrint('LOAD: $sidewalkPath');
-        assert(!looksWrong(sidewalkPath), 'Asset path looks wrong: $sidewalkPath');
+        assert(
+          !looksWrong(sidewalkPath),
+          'Asset path looks wrong: $sidewalkPath',
+        );
         final sprite = await Sprite.load(sidewalkPath);
         final comp = SpriteComponent()
           ..sprite = sprite
-          ..size = Vector2(GameConfig.worldWidth * 0.1, GameConfig.worldHeight * 0.05)
-          ..position = Vector2(GameConfig.worldWidth * (0.15 + 0.15 * i), GameConfig.worldHeight * 0.45);
+          ..size = Vector2(
+            GameConfig.worldWidth * 0.1,
+            GameConfig.worldHeight * 0.05,
+          )
+          ..position = Vector2(
+            GameConfig.worldWidth * (0.15 + 0.15 * i),
+            GameConfig.worldHeight * 0.45,
+          );
         _sidewalks.add(comp);
         await add(comp);
       } catch (e) {
@@ -246,12 +278,20 @@ class ParliamentMapComponent extends PositionComponent {
       final sprite = await Sprite.load(carPath);
       final comp = SpriteComponent()
         ..sprite = sprite
-        ..size = Vector2(GameConfig.worldWidth * 0.07, GameConfig.worldHeight * 0.04)
-        ..position = Vector2(GameConfig.worldWidth * 0.18, GameConfig.worldHeight * 0.7);
+        ..size = Vector2(
+          GameConfig.worldWidth * 0.07,
+          GameConfig.worldHeight * 0.04,
+        )
+        ..position = Vector2(
+          GameConfig.worldWidth * 0.18,
+          GameConfig.worldHeight * 0.7,
+        );
       _cars.add(comp);
       await add(comp);
     } catch (e) {
-      debugPrint('Failed to load car sprite (Civilian/Blue/Sedan 1, carBlue2_000.png): $e');
+      debugPrint(
+        'Failed to load car sprite (Civilian/Blue/Sedan 1, carBlue2_000.png): $e',
+      );
     }
   }
 

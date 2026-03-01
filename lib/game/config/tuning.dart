@@ -23,8 +23,6 @@ class Tuning {
   static const double factionRadius = 18;
   static const double factionCollectionRadius = 80;
 
-
-
   // Combat/Encounters
   static const int encounterRadius = 40;
   static const double encounterCooldown = 1; // seconds between encounters

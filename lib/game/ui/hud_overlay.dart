@@ -1,3 +1,4 @@
+import 'dart:ui';
 import 'package:flutter/material.dart';
 
 import 'package:vodkania_game/game/state/game_state.dart';
@@ -18,94 +19,160 @@ class HudOverlay extends StatelessWidget {
           Positioned(
             right: 16,
             top: 70, // Below the return menu button
-            child: StreamBuilder<void>(
-              stream: Stream.periodic(const Duration(milliseconds: 100)),
-              builder: (context, snapshot) {
-                final runState = GameState.instance.currentRun;
-                if (runState == null) return const SizedBox.shrink();
+            child: LayoutBuilder(
+              builder: (context, constraints) {
+                final isSmall = MediaQuery.of(context).size.height < 600;
+                return StreamBuilder<void>(
+                  stream: Stream.periodic(const Duration(milliseconds: 100)),
+                  builder: (context, snapshot) {
+                    final runState = GameState.instance.currentRun;
+                    if (runState == null) return const SizedBox.shrink();
 
-                // Clone and sort the list of players by score descending
-                final players = List.of(game!.allPlayers)
-                  ..sort((a, b) => b.npcCount.compareTo(a.npcCount));
+                    // Clone and sort the list of players by score descending
+                    final players = List.of(game!.allPlayers)
+                      ..sort((a, b) => b.npcCount.compareTo(a.npcCount));
 
-                return Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-                  decoration: BoxDecoration(
-                    color: Colors.black.withValues(alpha: 0.75 * 255),
-                    borderRadius: BorderRadius.circular(12),
-                    border: Border.all(color: Colors.white24, width: 1.5),
-                  ),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      const Text(
-                        'SCOREBOARD',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold,
-                          letterSpacing: 1.2,
-                        ),
-                      ),
-                      const SizedBox(height: 8),
-                      // List all 5 players
-                      ...players.map((p) {
-                        return Padding(
-                          padding: const EdgeInsets.only(bottom: 4),
-                          child: Row(
-                            mainAxisSize: MainAxisSize.min,
+                    final totalNpcs = runState.totalNpcs;
+                    final remainingNpcs = runState.remainingNpcs;
+                    final collectedNpcs = totalNpcs - remainingNpcs;
+                    final progress = totalNpcs > 0 ? collectedNpcs / totalNpcs : 0.0;
+
+                    return Container(
+                      width: isSmall ? 90 : 120, // Halve width
+                      padding: EdgeInsets.all(isSmall ? 6 : 10), // Halve padding
+                      color: Colors.transparent, // Completely transparent
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    GameState.instance.currentStageName.toUpperCase(),
+                                    style: TextStyle(
+                                      color: Colors.cyanAccent,
+                                      fontSize: isSmall ? 4 : 5, // Halved
+                                      fontWeight: FontWeight.w900,
+                                      letterSpacing: 1.5,
+                                    ),
+                                  ),
+                                  Text(
+                                    'LEVEL ${GameState.instance.currentLevel}',
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: isSmall ? 7 : 9, // Halved
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              Icon(Icons.leaderboard_rounded, color: Colors.white70, size: isSmall ? 10 : 12), // Halved
+                            ],
+                          ),
+                          SizedBox(height: isSmall ? 4 : 8),
+                          
+                          // Collection Progress
+                          Text(
+                             'COLLECTION PROGRESS',
+                             style: TextStyle(color: Colors.white54, fontSize: isSmall ? 4 : 5, fontWeight: FontWeight.bold), // Halved
+                          ),
+                          const SizedBox(height: 3),
+                          Stack(
                             children: [
                               Container(
-                                width: 12,
-                                height: 12,
+                                height: 4, // Halved
                                 decoration: BoxDecoration(
-                                  color: p.playerColor,
-                                  shape: BoxShape.circle,
+                                  color: Colors.white10,
+                                  borderRadius: BorderRadius.circular(2),
                                 ),
                               ),
-                              const SizedBox(width: 8),
-                              SizedBox(
-                                width: 120, // fixed width for alignment
-                                child: Text(
-                                  p.playerName,
-                                  style: TextStyle(
-                                    color: p.playerName == 'You' ? Colors.cyanAccent : Colors.white,
-                                    fontSize: 16,
-                                    fontWeight: p.playerName == 'You' ? FontWeight.bold : FontWeight.normal,
-                                  ),
-                                ),
-                              ),
-                              SizedBox(
-                                width: 30, // Score aligned
-                                child: Text(
-                                  '${p.npcCount}',
-                                  textAlign: TextAlign.right,
-                                  style: const TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.bold,
+                              FractionallySizedBox(
+                                widthFactor: progress.clamp(0.0, 1.0),
+                                child: Container(
+                                  height: 4, // Halved
+                                  decoration: BoxDecoration(
+                                    gradient: const LinearGradient(
+                                      colors: [Colors.cyanAccent, Colors.blueAccent],
+                                    ),
+                                    borderRadius: BorderRadius.circular(2),
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: Colors.cyanAccent.withValues(alpha: 0.4 * 255),
+                                        blurRadius: 3,
+                                      ),
+                                    ],
                                   ),
                                 ),
                               ),
                             ],
                           ),
-                        );
-                      }),
-                      const SizedBox(height: 12),
-                      const Divider(color: Colors.white30, height: 1),
-                      const SizedBox(height: 8),
-                      Text(
-                        'Remaining ATMs: ${runState.remainingNpcs}',
-                        style: const TextStyle(
-                          color: Colors.white70,
-                          fontSize: 14,
-                        ),
+                          const SizedBox(height: 2),
+                          Align(
+                            alignment: Alignment.centerRight,
+                            child: Text(
+                              '$collectedNpcs / $totalNpcs',
+                              style: TextStyle(color: Colors.white70, fontSize: isSmall ? 4 : 5, fontWeight: FontWeight.bold), // Halved
+                            ),
+                          ),
+
+                          SizedBox(height: isSmall ? 6 : 10),
+                          const Divider(color: Colors.white12, height: 1),
+                          SizedBox(height: isSmall ? 4 : 6),
+
+                          // Player List
+                          ...players.map((p) {
+                            final isLocalPlayer = p.playerName == 'You';
+                            return Padding(
+                              padding: EdgeInsets.only(bottom: isSmall ? 3 : 5),
+                              child: Row(
+                                children: [
+                                  Container(
+                                    width: isSmall ? 9 : 12, // Halved
+                                    height: isSmall ? 9 : 12, // Halved
+                                    decoration: BoxDecoration(
+                                      color: p.playerColor.withValues(alpha: 0.2 * 255),
+                                      shape: BoxShape.circle,
+                                      border: Border.all(color: p.playerColor, width: 1.5),
+                                    ),
+                                    child: Icon(
+                                      isLocalPlayer ? Icons.person : Icons.android,
+                                      size: isSmall ? 5 : 7, // Halved
+                                      color: p.playerColor,
+                                    ),
+                                  ),
+                                  const SizedBox(width: 5), // Halved
+                                  Expanded(
+                                    child: Text(
+                                      p.playerName,
+                                      style: TextStyle(
+                                        color: isLocalPlayer ? Colors.white : Colors.white70,
+                                        fontSize: isSmall ? 6 : 7, // Halved
+                                        fontWeight: isLocalPlayer ? FontWeight.bold : FontWeight.w500,
+                                      ),
+                                    ),
+                                  ),
+                                  Text(
+                                    '${p.npcCount}',
+                                    style: TextStyle(
+                                      color: isLocalPlayer ? Colors.cyanAccent : Colors.white,
+                                      fontSize: isSmall ? 7 : 8, // Halved
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            );
+                          }),
+                        ],
                       ),
-                    ],
-                  ),
+                    );
+                  },
                 );
-              },
+              }
             ),
           ),
         // Menu / Return Button (Top Right)
@@ -134,4 +201,3 @@ class HudOverlay extends StatelessWidget {
 }
 
 // Removed _InventoryDialog
-

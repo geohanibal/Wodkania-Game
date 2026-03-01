@@ -43,10 +43,7 @@ class MathUtils {
     double minY,
     double maxY,
   ) {
-    return (
-      randomRange(minX, maxX),
-      randomRange(minY, maxY),
-    );
+    return (randomRange(minX, maxX), randomRange(minY, maxY));
   }
 
   /// Normalize angle to [-PI, PI]

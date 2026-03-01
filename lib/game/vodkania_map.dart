@@ -3,12 +3,11 @@ import 'package:flame/components.dart';
 import 'package:flame_tiled/flame_tiled.dart';
 
 class TiledWall extends PositionComponent {
-  TiledWall({required Vector2 position, required Vector2 size}) 
-      : super(position: position, size: size);
+  TiledWall({required Vector2 position, required Vector2 size})
+    : super(position: position, size: size);
 }
 
 class VodkaniaMap extends PositionComponent with HasGameReference {
-
   VodkaniaMap({required this.mapPath});
   static const double tileSize = 64;
   late TiledComponent map;

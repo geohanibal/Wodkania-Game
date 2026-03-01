@@ -59,10 +59,7 @@ class _KeyboardControlsState extends State<KeyboardControls> {
           }
           return KeyEventResult.ignored;
         },
-        child: ColoredBox(
-          color: Colors.transparent,
-          child: widget.child,
-        ),
+        child: ColoredBox(color: Colors.transparent, child: widget.child),
       ),
     );
   }

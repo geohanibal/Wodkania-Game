@@ -10,8 +10,17 @@ class GameState {
   // Current run state
   RunState? currentRun;
 
-  // High scores / persistence (not implemented yet)
-  int highScore = 0;
+  // Level Progression System
+  int currentLevel = 1;
+  final Set<int> completedLevels = {};
+  int maxUnlockedLevel = 1;
+
+  String get currentStageName {
+    if (currentLevel <= 6) return 'Stage 1 - Easy';
+    if (currentLevel <= 14) return 'Stage 2 - Normal';
+    if (currentLevel <= 22) return 'Stage 3 - Hard';
+    return 'Stage 4 - Expert';
+  }
 
   void startNewRun() {
     currentRun = RunState();
@@ -21,8 +30,19 @@ class GameState {
     currentRun = null;
   }
 
+  void levelUp() {
+    completedLevels.add(currentLevel);
+    if (currentLevel < 30) {
+      currentLevel++;
+      if (currentLevel > maxUnlockedLevel) {
+        maxUnlockedLevel = currentLevel;
+      }
+    }
+  }
+
   void reset() {
     currentRun = null;
+    currentLevel = 1;
   }
 }
 

@@ -75,7 +75,12 @@ class SpriteGenerator {
   }
 
   void _drawWalkFrame(
-      img.Image image, int offsetX, int offsetY, int frame, bool facingLeft,) {
+    img.Image image,
+    int offsetX,
+    int offsetY,
+    int frame,
+    bool facingLeft,
+  ) {
     final centerX = offsetX + frameWidth ~/ 2;
     final centerY = offsetY + frameHeight ~/ 2;
 
@@ -185,7 +190,13 @@ class SpriteGenerator {
   }
 
   void _fillRect(
-      img.Image image, int x, int y, int width, int height, int color,) {
+    img.Image image,
+    int x,
+    int y,
+    int width,
+    int height,
+    int color,
+  ) {
     for (var dy = 0; dy < height; dy++) {
       for (var dx = 0; dx < width; dx++) {
         _setPixel(image, x + dx, y + dy, color);
@@ -196,13 +207,13 @@ class SpriteGenerator {
   void _setPixel(img.Image image, int x, int y, int color) {
     if (x >= 0 && x < image.width && y >= 0 && y < image.height) {
       image.setPixelRgba(
-          x,
-          y,
-          (color >> 16) & 0xFF, // R
-          (color >> 8) & 0xFF, // G
-          color & 0xFF, // B
-          (color >> 24) & 0xFF, // A
-          );
+        x,
+        y,
+        (color >> 16) & 0xFF, // R
+        (color >> 8) & 0xFF, // G
+        color & 0xFF, // B
+        (color >> 24) & 0xFF, // A
+      );
     }
   }
 }

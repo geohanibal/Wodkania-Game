@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:vodkania_game/game/config/game_config.dart';
 import 'package:vodkania_game/game/entities/npc/npc_component.dart';
 import 'package:vodkania_game/game/entities/player/player_component.dart';
+import 'package:vodkania_game/game/input/virtual_joystick.dart';
 import 'package:vodkania_game/game/state/game_state.dart';
 import 'package:vodkania_game/game/state/overlays.dart';
 import 'package:vodkania_game/game/systems/collision_system.dart';
@@ -21,7 +22,8 @@ class VodkaniaGame extends FlameGame with HasCollisionDetection {
   late PlayerComponent player;
   List<PlayerComponent> allPlayers = [];
   List<NpcComponent> allNpcs = [];
-  
+
+  VirtualJoystick? joystick;
   late CollisionSystem collisionSystem;
 
   @override
@@ -30,7 +32,7 @@ class VodkaniaGame extends FlameGame with HasCollisionDetection {
   @override
   Future<void> onLoad() async {
     await super.onLoad();
-    overlays.add(GameOverlays.mapSelection);
+    overlays.add(GameOverlays.mainMenu);
   }
 
   Future<void> startLevel() async {
@@ -50,7 +52,10 @@ class VodkaniaGame extends FlameGame with HasCollisionDetection {
 
     // 1. Setup Human Player
     player = PlayerComponent(
-      position: Vector2(GameConfig.worldWidth / 2, GameConfig.worldHeight * 0.8),
+      position: Vector2(
+        GameConfig.worldWidth / 2,
+        GameConfig.worldHeight * 0.8,
+      ),
       playerName: 'You',
     );
     allPlayers.add(player);
@@ -71,49 +76,50 @@ class VodkaniaGame extends FlameGame with HasCollisionDetection {
     ];
     final random = math.Random();
     for (var i = 0; i < 4; i++) {
-        final aiPlayer = PlayerComponent(
-          position: Vector2(
-            random.nextDouble() * GameConfig.worldWidth * 0.8 + GameConfig.worldWidth * 0.1,
-            random.nextDouble() * GameConfig.worldHeight * 0.8 + GameConfig.worldHeight * 0.1,
-          ),
-          isAI: true,
-          playerName: 'AI ${i + 1}',
-          playerColor: aiColors[i],
-          aiArchetype: archetypes[i],
-        );
-        allPlayers.add(aiPlayer);
-        await world.add(aiPlayer);
+      final aiPlayer = PlayerComponent(
+        position: Vector2(
+          random.nextDouble() * GameConfig.worldWidth * 0.8 +
+              GameConfig.worldWidth * 0.1,
+          random.nextDouble() * GameConfig.worldHeight * 0.8 +
+              GameConfig.worldHeight * 0.1,
+        ),
+        isAI: true,
+        playerName: 'AI ${i + 1}',
+        playerColor: aiColors[i],
+        aiArchetype: archetypes[i],
+      );
+      allPlayers.add(aiPlayer);
+      await world.add(aiPlayer);
     }
 
     // 3. Setup Camera on Human Player
     camera = CameraSetup.setupCamera(this, player);
+    
+    // Cleanup any extra cameras added maliciously before
+    children.whereType<CameraComponent>().forEach(remove);
     add(camera);
 
+    joystick = VirtualJoystick();
+    camera.viewport.add(joystick!);
+
     // 4. Spawn NPCs
-    const totalNpcsToSpawn = 100;
+    const totalNpcsToSpawn = 200;
     var totalPoints = 0;
 
     for (var i = 0; i < totalNpcsToSpawn; i++) {
-      final rand = random.nextDouble();
-      var tier = NpcTier.normal;
-      var points = 1;
+      const tier = NpcTier.normal;
+      const points = 1;
 
-      if (rand > 0.95) {
-        tier = NpcTier.legendary;
-        points = 5;
-      } else if (rand > 0.8) {
-        tier = NpcTier.rare;
-        points = 3;
-      }
-      
       totalPoints += points;
 
       final npc = NpcComponent(
         tier: tier,
         // Distribute randomly across playable space
         position: Vector2(
-          random.nextDouble() * GameConfig.worldWidth * 0.8 + GameConfig.worldWidth * 0.1,
-          random.nextDouble() * GameConfig.worldHeight * 0.8 + GameConfig.worldHeight * 0.1,
+          random.nextDouble() * GameConfig.worldWidth * 0.8 +
+              GameConfig.worldWidth * 0.1,
+          random.nextDouble() * GameConfig.worldHeight * 0.8 +
+              GameConfig.worldHeight * 0.1,
         ),
       );
       allNpcs.add(npc);
@@ -136,14 +142,24 @@ class VodkaniaGame extends FlameGame with HasCollisionDetection {
 
     final runState = GameState.instance.currentRun;
     if (runState != null && !runState.isGameOver) {
+      if (joystick != null) {
+        if (!joystick!.delta.isZero()) {
+          player.setMovementDirection(joystick!.relativeDelta);
+        } else {
+          player.setMovementDirection(Vector2.zero());
+        }
+      }
+
       // Math-based Early Win Condition Logic
       if (allPlayers.isNotEmpty) {
         // Sort players descending by score
         final sortedPlayers = List<PlayerComponent>.from(allPlayers)
           ..sort((a, b) => b.npcCount.compareTo(a.npcCount));
-        
+
         final leaderScore = sortedPlayers[0].npcCount;
-        final secondScore = sortedPlayers.length > 1 ? sortedPlayers[1].npcCount : 0;
+        final secondScore = sortedPlayers.length > 1
+            ? sortedPlayers[1].npcCount
+            : 0;
         final remainingNpcs = runState.remainingNpcs;
 
         // Condition 1: All NPCs collected
@@ -151,7 +167,7 @@ class VodkaniaGame extends FlameGame with HasCollisionDetection {
         if (remainingNpcs == 0 || leaderScore > secondScore + remainingNpcs) {
           runState.isGameOver = true;
           // You can also capture the winner explicitly here, or the UI could just read sortedPlayers[0].
-          
+
           pauseEngine();
           // Show Game Over Overlay immediately
           overlays.add(GameOverlays.gameOver);
@@ -161,13 +177,15 @@ class VodkaniaGame extends FlameGame with HasCollisionDetection {
   }
 
   void movePlayer(Vector2 direction) {
-    if (GameState.instance.currentRun != null && !GameState.instance.currentRun!.isGameOver) {
+    if (GameState.instance.currentRun != null &&
+        !GameState.instance.currentRun!.isGameOver) {
       player.setMovementDirection(direction);
     }
   }
 
   void stopPlayer() {
-    if (GameState.instance.currentRun != null && !GameState.instance.currentRun!.isGameOver) {
+    if (GameState.instance.currentRun != null &&
+        !GameState.instance.currentRun!.isGameOver) {
       player.setMovementDirection(Vector2.zero());
     }
   }

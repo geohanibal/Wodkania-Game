@@ -10,6 +10,13 @@ class CameraSetup {
     // Follow the player
     camera.follow(player);
 
+    // Responsive Camera Zoom
+    if (game.canvasSize.y < 600) {
+      camera.viewfinder.zoom = 0.7; // Zoom out on small screens (mobile)
+    } else {
+      camera.viewfinder.zoom = 1.0; // Default zoom on desktop
+    }
+
     // Set viewport
     camera.viewfinder.anchor = Anchor.center;
 

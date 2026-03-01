@@ -12,7 +12,9 @@ void main() {
     final bytes = file.readAsBytesSync();
     final img = decodeImage(bytes);
     if (img != null) {
-      sb.writeln('Image ${file.path.split(Platform.pathSeparator).last}: ${img.width}x${img.height}');
+      sb.writeln(
+        'Image ${file.path.split(Platform.pathSeparator).last}: ${img.width}x${img.height}',
+      );
     }
   }
 
@@ -42,7 +44,7 @@ void main() {
   sb.writeln('\n--- Tiles ---');
   checkImage('assets/images/tiles/parliament.png');
   checkImage('assets/images/BaseTiles.png');
-  
+
   File('output_dims.txt').writeAsStringSync(sb.toString());
   print('Generated output_dims.txt');
 }
